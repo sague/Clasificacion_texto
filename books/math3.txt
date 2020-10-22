@@ -1,0 +1,1234 @@
+Robotics Research 
+Ibchnical Report 
+
+
+
+
+ii^^vi 
+
+
+
+
+
+
+
+
+
+
+
+
+Multiple Extension Algebraic 
+Number Fields 
+
+by 
+
+Chung-jen Ho 
+
+
+
+Technical Report No. 432 
+
+Robotics Report No. 190 
+
+March, 1989 
+
+
+
+
+New York University 
+int Institute of Mathematical Sciences 
+
+Computer Science Division 
+
+25 1 Mercer Street New York, N. Y 1 00 1 2 
+
+
+
+
+Multiple Extension Algebraic 
+Number Fields 
+
+by 
+
+Chung-jen Ho 
+
+
+
+Technical Report No. 432 
+
+Robotics Report No. 190 
+
+March, 1989 
+
+
+
+New York University 
+
+Dept. of Computer Science 
+
+Courant Institute of Mathematical Sciences 
+
+251 Mercer Street 
+
+New York, New York 10012 
+
+
+
+Work on this paper has been supported by National Science Foundation Grant CCR-8703458. 
+
+
+
+Abstract 
+
+Let a be an algebraic integer satisfying a monic irreducible polynomial A{t) € Z[<]. The algebraic 
+integers contained in Q(a) form a ring which we shall denote hyTla- It is known that if Co = disc(yl) 
+then Ha C — Z[q], where disc(>l) is the dtscnmtnant of A. Let /? be a root of a prescribed monic 
+
+Co 
+
+irreducible polynomial B{u) G Z[Q][ii]. Let the algebraic number field Q(a)(/?) be given as the field 
+Q(a) extended by /?. We denote by T^ofl the algebraic integers contained in Q(a)(/?). In this paper, 
+we present an algorithm to compute an integer Cp such that 
+
+-R-aP C -1—Z[a][0]. 
+OoO^ 
+
+The algorithm takes 0(6|,^^ log i5^ + '^^) arithmetic operations where 6^ and Sb are the degree 
+of A and B respectively. With this result, we generalize the Lenstra's algorithm [6] for factoring 
+polynomials over algebraic number field. Our algorithm computes the factorization of univariate 
+polynomials over algebraic number field Q(pi)(p2) ■ ■ {Pz) where pj (j = 1, . . . , 2) is recursively de- 
+fined as follows: pi is an algebraic number and pj is algebraic of degree > 2 over Q{pi){p2) ■ ■ ■ {pj-i)- 
+The number of arithmetic operation and the binary length of integers required by this algorithm are 
+polynomial in the degree and the LOG of the coefficients of input polynomials. 
+
+
+
+Multiple Extension Algebraic Number Fields 1 
+
+1 Introduction 
+
+Throughout this paper, we denote by 6f the degree of an univariate polynomial F. For any poly- 
+nomial F = Z)ffo<^'^' € ^W' ^* denote by ||F1|2 the value of yYi^.locf and by F^^ the value 
+of inax{co,ci, . . .,Cj,}. Let a be an algebraic integer satisfying a monic irreducible polynomial 
+A{t) e Z[t]. The algebraic integers contained in Q(a) form a ring which we shall denote by Tva- It 
+is known that if Ca = disc(yl) then Ka C — Z[q], where di8c(.4) is the discrimtnant of A. Let 
+/3 be a root of a prescribed monic irreducible polynomial B{u) € Z[q][u]. Then is an algebraic 
+integer (see [3]). Thus, Z[a][/3] is a domain of algebraic integers (see [5]). Let the algebraic number 
+field Q(q)(/?) be given as the field Q(a) extended by /?. We denote by Hap the algebraic integers 
+contained in Q(q)(/?). Clearly, Tlaff is a ring and Z[q][/?] C TZaff- Our problem is to find an integer 
+Cp such that 
+
+-R-ap C —L_Z[a][y3]. (1) 
+
+In fact, we can translate a double extension to a simple extension and then compute a discriminant to 
+get an integer Cap such that TZa^ Q -p, — Z[a][/?]. However, this method takes arithmetic operations 
+0((5^5g). We call this method the naive algorithm. In this paper, we present an algorithm to 
+compute the Cp. It only takes 0{{)\hA log 5^ + 6^) arithmetic operations. Furthermore, the integer 
+Ca& produced by the naive algorithm has binary length 
+
+But, the integer CaCff produced by our algorithm has binary length 
+
+0(5A<5fl(Iog6B + ^A log^max + log Smax))- 
+
+Therefore, our algorithm is much better than the naive algorithm. Note that we haven't defined 
+
+Smax • -Bmax is defined as follows: 
+
+Definition If B{u) = J2'=q Uto' bija'u^ , then B^^ = max{6.,;0 < i < 8a,0 < j < 6b]. 
+
+
+
+Multiple Extension Algebraic Number Fields 2 
+
+The following typed variables will be used: 
+
+1. a,/3, (T,<,£, A,T,r, * are algebraic integers. 
+
+2. a,b,c,d,e,i, j,k, I, Tn,n,w And Ca,C0, Co, are integers. 
+
+3. Tla,'JZa0,'^<ri <7, are domains of algebraic integers. 
+
+4. A, B, E, F, G are univariate polynomials over algebraic integer domains. 
+
+5. D, K, N are integers. 
+
+6. L is a lattice. 
+
+In Section 2, we briefly describe the naive algorithm and analyze it. Section 3 contains the main result 
+of this paper. In Section 4, we extend our result to the algebraic number field Q{<ti){(T2) ■ ■ {(Ti), 
+where aj {j = 1, . . . , z) are recursively defined £is follows: 
+
+{(Ti is an algebraic integer 
+(2) 
+<7j is integral of degree > 2 over Z[(Ti][<T2] • • • [f;-!]- 
+
+With this result, we generalize the Lenstra's algorithm [6] for factoring polynomials over algebraic 
+number field. Our algorithm computes the factorization of monic squarefree polynomiab over alge- 
+braic number field Q(o-i)(<T2) ■ • (cr^). The number of arithmetic operation and the binary length 
+of integers required by this algorithm are polynomial in the degree and the LOG of the coefficients 
+of input polynomials. Of course, our algorithm is better than the naive algorithm by translating a 
+multiple extension to a simple extension and then factoring over the simple algebraic extension of 
+the rational number field. 
+
+2 The Naive Algorithm 
+
+Let A,B,a,0,'Ra be as in section 1. The following is a well known result. 
+
+
+
+Multiple Extension Algebrauc Number Fields 3 
+
+Lemma 1 If Ca = d\sc{A), then V.^ C 7^Z[q]. 
+
+In the naive algorithm, we first compute an integral polynomial B(u) € Z[u] such that /? is a root 
+of B{u). Let B(t,u) be a bivariate polynomial obtained by replacing a in B{u) by t. Thus B{t, u) 6 
+Z[t][u]. By [3, page 185], we can take B(u) = re8,(>l(t), B(t, u)) where re8,(yi,B) denotes the 
+resultant of /I and B with respect to t. Then, compute a bivariate polynomial G{t, y) = resu(.i(/ - 
+yu), B(u)); and then compute an integer j/o such that di8c(G(<, yo)) 5^ 0. From Loos [3, page 185], 
+G{t,yo) has a root 7 = + yo0 and Q(7) = Q(q)(/3). If we let Cap = di8c(G(t, j/o)). then clearly, 
+by Lemma 1, we have Tlap C -:;—Z[j] C ——Z[a]\j3]. 
+
+Ca0 Ca0 
+
+Because B{u) has degree Sa^b, the bivariate polynomial G{t,y) has degree S^Sb with respect 
+to variable t or variable y. Thus, it takes 0{6\8q) arithmetic operations to compute disc(G(<, yo))- 
+When regarding G{t, y) as a polynomial in t over Z[y], let F{y) = di8c(G(<, y)). Thus, Ca0 = ^(yo) 
+and F{y) has degree 8\6g. We may compute yo to be the smallest positive integer such that 
+F{yo) / 0. For the best caise, this will takes 0(6^6g) arithmetic operations; for the worest csise, it 
+takes 0{8]^6g) arithmetic operations since F(y) has 6\6g roots. If we choose yo to be the smallest 
+integer such that yo > 1 + Cmax> then F(yo) ^ since 1 + Cmax is the root bound of F{y). But, in 
+this case. Cap = F{yo) may be very large. 
+
+To analyze the binary length o(Ca0, we need the following theorem which is a generation of the 
+result of Goldstein and Graham [4]. 
+
+Theorem 2 Let A{xi,X2, ■ ■ ■ ^x^) = {AiK.{xi,X2, ■ ■ . ,Xz)) be a n x n matrix whose elements are 
+polynomials and let det{A{x,,X2, . . . ,x,)) = E^. (•• •(E;.,(E^, «;..;., p.^i'K') ■ O^^ • U w,, 
+denotes the sum of the absolute values of the coefficients of AtKixi,X2, ■ ■ ■ ,Xi) then 
+
+
+
+Multiple Extension Algebraic Number Fields 
+Proof. Since |>4.«(e'*' , e'*\ . . . , e'*')| < lu.,, it follows from Hadamard's inequality that 
+ldet(.i(e•*^e•»^ . . . .e'*'))!^ < H E M..«(^'''. «"'- • ■ •.«'*■)!' < fl E "'" 
+
+i=l *=1 4 = 1 «=1 
+
+However, 
+
+-nr-r r r ■■ r \det{A(e">',e''\...,e''-))\Ue.--d9,dd, 
+(25r)' Jo Jo Jo 
+
+/•2T , /■2» 1 /-Zt 
+
+
+
+
+
+
+
+
+
+= E-Eii'ii"'(DE^»... ..«■-■)'•"■'■) 
+
+
+
+;*> Ml 
+
+
+
+M3 Ml 
+M. M3 Ml Ml 
+
+= E-EEi«-- -I' 
+
+M. M3 Ml 
+
+Hence, 
+
+E--EEi«---.i' 
+
+M. MJ Ml 
+
+= (2^ /" /' • • •/" |det(A(e"'',e'«% . . .,e*«-))l' dO, ..-de^ d9, 
+
+1 /-Zt ^2ir #.2i " n 
+
+n n 
+
+=nE-?. ° 
+
+1 = 1 /c=l 
+
+Corollary 3 Suppose A{x,y) — {Aij{x,y)) 6e a n x n matrix whose elements are polynomials and 
+lei ao,ai, ■ ■ ■ ,am be the coefficients of the polynomial representation of det(A{x, y)). If Wij denotes 
+the sum of the absolute values of the coefficients of Aij{x,y) then 
+
+(EM^v^^<fflE-5l 
+
+*=0 V = lj = l / 
+
+
+
+Multiple Extension Algebraic Number Fields 
+By Corollary 3, we have ||fll|2 < ||A||*^(6y'6BB„„)'^. U A{t) = E;=o«j''. ^^en 
+
+
+
+^(f-yo«) = x;(i;«.(j)''"Voj«^ 
+
+
+
+Hence, by Corollary 3, ||G(<,yo)||2 < /<:*^*«||B|r/, where 
+
+
+
+K = 
+
+
+
+\ 
+
+
+
+S(s-(o4 
+
+
+
+
+
+
+But, Cag = |F(yo)| < \\G{t,yo)\\2*^^ ■ Hence the binary length of Ca0 is 
+
+Oi5\6l log(2yo) + (5^*1 + «^5b) log^max + 6\Sb log B^^). 
+
+3 Double Extensions 
+
+Definition. Let 7^ be a ring and x an element of some field F containing TZ. We shall say that y 
+is integral over TZ, or for short Ti-integral, if the element x satisfies an equation 
+
+with coefficients a^ G 72., and an integer n > 1. x is said to be integral of degree n over 72 if x 
+doesn't satisfy any nonzero monic polynomial over 72 of degree less than n. 
+
+Let yl, 5,a,^, Co,72<, be as in section 1. Obviously, /? is Z[a]-integral. Let (^ 6 72a0- Then C is 
+also Z[a]-integral since ^ is Z-integral. We may find Ci,e2, . . .,£sb ^ ^l'*] *"d *" integer e ^ such 
+that regarding each £; as a polynomial in a over the integers we have no common factor amongst 
+all the coefficients of these polynomials and 
+
+Suppose /?!,..., /3{g are all the roots of B. Let 
+
+
+
+Multiple Extension Algebraic Number Fields 6 
+
+for j = l,2,...,<5fl. The last system of equations may be considered as a system of equations in 
+f<e~' € Q(a) for i = I,..., 63- If we denote its determinant by A, then A^ = disc(fl). Since 
+disc(5) G Z[q], a is integral over Z[q], not necessarily lying in the field Q(q)(/3). But Cramer's 
+rule shows that the numbers Ti = Ac,e~' are integral over Z[a) since both and C are integral 
+over Z[a]; thus AT^ are also integral over Z[q]. But AT,- = A^£,e~' = di8c(fl)c,e~' are in Q(a); 
+so that AT, are in TZ-o; hence AT, G — ;-Z[a]. It follows that e divides all the numbers Ca^^^i for 
+
+Co 
+
+j = I,. . .,6b- Although we have no common factor amongst all the coefficients of Cj (i = 1, . . .,63), 
+it does not follow that e divides CoA^. When multiplied by Ci, A^ could produce a common factor 
+in the coefficients even though neither A^ nor £i had any common factor in their coefficients. 
+
+Example 1 Suppose A(t) =t^ + 2t + 2. Then, a^ + 2a + 2 = 0. If A^ = q+4 and fi = 3a + 2, then 
+either A^ nor £, had any common factor in their coefficients. But A" • £i = (q + 4)(3a + 2) = 8q + 2 
+which is divided by 2. 
+
+Let r = E>=o' CjoJ e Z[q]. Define a map 4> : Z[a] — Z[t] by 
+
+Let F be the image of A^ under and let F{t) = w ■ G(t) where Git) is the primitive part of F{t). 
+Clearly, w is the content of F{t). We will show that e divides €„ ■ w ■ Tes(A, G). 
+
+Theorem 4 Suppose G{t),A(t) G 2[t] are two primitive polynomials in t and suppose A(i) is monic 
+and 6g < 6a. Let E{t) G Z[t] be an arbitrary primitive polynomial with 6b < 6a. If an integer c 
+divides the remainder of G{t)E{t) divided by A{t), then c divides res{A,G). 
+
+Proof Let F{t) be the remainder of G{t)E(t) divided by A{t). For convenience' sake, we need the 
+following definitions. Let Ai{x) G Z[t] [i = l,...,m) be polynomials and let 6a, < m. Then 
+mAt{Ai,A2, ...,Am) denotes the m x m matrix whose (i, m - j)th entry is the coefficient of x^ in 
+Ai(i). We denote by det(^i, yl,, • ■ ■ ,^m) the determinant of mat(X,, yl,, • ■ • , >4„,). 
+
+
+
+Multiple Extension Algebraic Number Fields 7 
+
+Then, we can write 
+
+res{A,G) = det(x*°-M, x^'^-^A, ...,A, x^^-^G, x'*-^G, ...,G). 
+
+Let E{t) = E'=o«.''- We have, for i =z 0,1, ... ,6e, 
+
+e, • res(yl, G) = Cj • det(x*°-M, x*°-M, ...,A, x'^-'C, x'^'^G, . . . , G) 
+= det(x'°-M, x'°-M yl, x*^-'G e.x'G G) 
+
+For all j ^ i, < j < 6e, adding the (m — «)th row by the product of Cj and the (m — j)th row, we 
+have 
+
+ei ■ res{A, G) = det(x*°-M, x*°-'^A, ...,A, x*>'-'G x'+*G, GE, x'-'G, . . . , G). 
+
+For j = 1, . . . ,^0. subtracting the (m — i)th row by a multiple of the jth row such that the sequence of 
+row operations correspond to the long-division of G(t)£'(<) by A{t), we eventually reduce eires{A,G) 
+to 
+
+a ■ res{A, G) = det(x*°-M, x*°-M, ...,A, x*^-'G, . . . , x'+'G, F, x'-^G, . . . , G). 
+
+If c divides F{t), then clearly c divides all the a • re8(.4,G), for t = 0,1, ... ,Se- But, E{t) is 
+a primitive polynomial so that Ci (» = 0, l,...,^^) don't have common factors. It follows that c 
+divides res(.4, G). D 
+
+Theorem 4 implies that e divides Ca ■ w ■ res(i4, G). Let C^ = w ■ Tes{A, G). We obtain e divides 
+CaCp and 
+
+CCaC0 = (CaCp- e-'){e,/f + ■ ■ . -(-e^^/J^B-i) ^ zlaM. 
+
+Hence, TZap Q - - Z[a][/?]. We have shown the following theorem. 
+
+Theorem 5 Suppose F is the image of disc{B) under <j) and let F{t) — w ■ G(t) where G(t) ts the 
+primitive paH oj Fit). IfCa = d\sc{A) and Cp = w ■res{A{t),G{t)), then TZap Q -——-Z[a][f3]. 
+
+CaCp 
+
+
+
+Multiple Extension Algebraic Number Fields 8 
+
+It takes 0(6g) arithmetic steps in Z[q] to compute disc(5). But, to perform one arithmetic step 
+in Z[q] needs O(6^1og<5x) integer arithmetic operations. Thus, to compute disc(B) takes integer 
+arithmetic operations 0(6g6y{ \og6A)- And, it takes integer arithmetic operations 0{6^) to compute 
+res(j4(<), G{t)). Hence, The overall arithmetic steps needed for computing Cp is 0(6^6^ log 6a +6^ )• 
+
+By Theorem 2, |di8c(S)| < 6^/'\B^^A>^*^y^ . Thus, Cp < Si^'^iB^^A^C^)*"'* . Hence, the 
+binary length of CqQ is OiSASsCiogSB +6a log.4max + logflmnjc))- 
+
+4 Multiple Extensions 
+
+In this section, we generalize our result to the filed Q(<7i)(<T2) • ■ • (cr, ) where <Tj (j = l,...,z) are 
+recursively defined as follows: 
+
+{<Ti is an algebraic integer 
+ffj is integral of degree > 2 over Z[(Ti][(r2] • • ■ [o^j-i]. 
+Let <Tj satisfy a monic irreducible polynomial Sj(xj) € Z[<ti][(72] • • ■ [(Tj_i][jrj] for j = l,...,z. 
+Suppose r = IZ/i/=o ■■■Jln%o ^^,'=0 c^i*<3 >i,<^i"'^r-«^j''- For j = l,...,z, define a map 
+<Pj ■■ Z[^i][<T2] . . . [cTj_,][<r,] - Z[cTi][<72] ■ • • [aj.i][xj] by 
+
+6s,-l «s,-l«s,-l 
+II, =0 M3 = ;ji=0 
+
+We denote by 72^,^3 <7. the algebraic integers contained in Q(o'i)((T2) ■ • •(«''j)- Algorithm 1 computes 
+Cc, (i = 1, . . . , ;) such that 
+
+Ti-<^.a,. a, C — — __Z[^,][(T2] • • ■ [a,]. (3) 
+
+The proof of the correctness of (3) is similar to the proof of Theorem 5. 
+
+
+
+Multiple Extension Algebraic Number Fields 
+
+
+
+Algorithm 1 Computing Co, 
+
+1. if i = 1 then {Ca, := disc(5<); goto 6}. 
+
+2. Compute * := disc(Si) € Z[<ri][«Ti,j • ■ [ffi-i]. 
+
+3. When regarding * as a polynomial in «- 1 indeterminates <Ti,o-2. • • ■ .<^»-i. let 
+w is the greatest common divisor of all the integer coefficients of * and let 
+r := */u;. 
+
+4. for j := » — 1 downto 2 do 
+
+(a) Compute * := res{Sj{xj),G{xj)) € Z[cri][<T2] • • • [<Tj_i], where G{xj) is 
+the image of F under 0; . 
+
+(b) When regarding * as a polynomial in j — 1 indeterminates <Ti, <T2, . . . , (Tj_i, 
+let d be the greatest common divisor of all the integer coefficients of * and 
+let F := */(i. 
+
+(c) w := tv ■ d. 
+
+5. C<,, := u; ■ res(Si(ii),G(xi)) where G(a:j) is the image of F under (/>i. 
+
+6. End Algorithm. 
+
+
+
+For convenience' sake, we rename variable * and G and d in step 4 to be 'ij-i and Gj and dj_i 
+respectively and variable F in step 4 (a) to be Fj . Clearly, variable F in step 4 (b) should be changed 
+to Fj_i; and variables F and G in step 5 should be changed to Fi and Gi respectively. Also, we 
+rename variable "9 in step 2 & 3 to be *j_i and F in step 3 to be Fi_i. Figure 1 shows the algorithm 
+with renamed variables. Let Fj , $j , Gj and dj be as in Algorithm 2. We show the following lemma. 
+
+
+
+Multiple Extension Algebraic Number Fields 
+
+
+
+10 
+
+
+
+Algorithm 2 Computing C, 
+
+
+
+
+1. 
+
+
+if i = 1 then {C<,. := disc(Si); goto 6}. 
+
+
+
+
+2. 
+
+
+Compute *i_i := disc(S,) £ Z[(Ti][(T2] • • -[(T.-i]. 
+
+
+
+
+3. 
+
+
+When regarding 'I'i_i as a polynomial in «' — 1 indeterminates (Ti,a2, ■ ■ ■ ,<''i-i> 
+
+
+
+
+let w is the greatest common divisor of all the integer 
+
+
+coefficients of *i_i and 
+
+
+
+
+let r<_i := *._i/u;. 
+
+
+
+
+4. 
+
+
+for J := 1 — 1 downto 2 do 
+
+
+
+
+
+
+(a) Compute *j_i := res{Sj{xj),Gj{xj)) G Z[<t,][<T2] 
+
+
+••■[(T_,_i], where Gj(xj) 
+
+
+
+
+is the image of Fj under (^^ . 
+
+
+
+
+
+
+(b) When we regard *y_i as a polynomial in 
+
+
+j — 1 indeterminates 
+
+
+
+
+(Ti,<T2, ■ ■ ■,<^j-i, let (fj_i be the greatest common 
+
+
+divisor of all the integer 
+
+
+
+
+coefficients of *j_i and let Fj_i := *j_i/(fj_i. 
+
+
+
+
+
+
+(c) u; := w ■ dj_i. 
+
+
+
+
+5. 
+
+
+C„, := w •res(5i(xi),Gi(xi)) where Gi(xj) is the image of Fi under <^i. 
+
+
+6. 
+
+
+End Algorithm. 
+
+
+
+
+
+Figure 1: Algorithm for Computing C„,. 
+
+
+
+Multiple Extension Algebraic Number Fields 11 
+
+Lemma 6 Suppose £ is an arbitrary element tn Zfcijfcro] • ■ • [cTj] such that regarding £ as a poly- 
+nomial in <Ti,a2, ■ ■ ■ ,<Tj we have no common factor amongst all the integer coefficients of £. For 
+I < j < i, if an integer e divides all the integer coefficients of Tj ■ £ when Tj ■ £ is regarded as a 
+polynomial in cti, (T2> ■ ■ ■ ,<^ji then e divides di ■ d2 • -dj^i ■ res(Si(ari), G\{x\)). 
+
+Proof. We prove by induction on j. 
+
+Basis: If j = 1, then this lemma is equivalent to Theorem 4. 
+
+Inductive steps: Suppose 2 < j < i. Let E{xj) be the image of e under 4>j and let F(xj) be the 
+
+remainder of Gj{xj)E{xj) divided by Sj{xj). Clearly, F{<Tj) = Tj ■£. Then, we can write 
+
+res(Sj,Gj) = det(i'°^-'Sj,x*°^-^Sj Sj,x^^>-''Gj,x^^>-^Gj, . . . ,Gj). 
+
+Let E{xj) = Ylilo^kx^. We have, for k = 0.l 6e, 
+
+£tres{Sj,Gj) = £t ■ det{x'^>-' S, ,x'^>-^S, , . . . ,S,,x'',-'G,,x''^-''G,, . . . ,G,) 
+= det(x*°.-'5;,x*°.-^S, Sj,x''^-'Gj,. ..,£tx'Gj,. . .,Gj) 
+
+For all / :^ it, < / < 6£;, adding the (m — /t)th row by the product of £i and the (m — /)th row, we 
+have 
+
+For I — 1, . . . , 6g, , subtracting the (m — k)ih row by a multiple of the /th row such that the sequence 
+of row operations correspond to the long-division of Gj(xj)£'(xj) by Sj{xj), we eventually reduce 
+£k ■ res(Sj , Gj) to 
+
+£t.res(S,,G,) = det(x''°.-i5;,x*°.-25;,...,5;,x«^-iG;,...,x*+'G,,F,x*-'G,,...,Gj). 
+
+When we regard (Tj , <T2, . . . , ctj as indeterminates, if e divides Tj ■ £, then e divides F{xj), so that e 
+divides all the £k ■ res(5j,G;), for k = 0,1,. . .,6e- Thus, according to Algorithm 2, e divides all 
+
+
+
+Multiple Extension Algebraic Number Fields 12 
+
+the £t dj-i Tj^i = dj_i Sk Tj^i. When we regard (T\,a-i, ■ ■ -yffj as indeterminates, let Ck be the 
+greatest common divisor of all the integer coefficients of et and let (^ = ft/ci for t = 0, 1, . . . , 6e- 
+Thus e divides all the dj_i ■ Ck ■ tk ■ ^}-i when we regard o-j, 0-2, . . . ,<tj as indeterminates. By 
+the inductive hypothesis, we have e divides all the d^_i ■ Ck ■ di ■ dj ■ ■ ■dj^2 • '■e8(5i(xi), Gi(ii)) 
+for i = l,2,...,m. But, Ck (/ = 0,1,..., m) don't have common factors since regarding e as a 
+polynomial in <Ti, (T2, ■ ■ . ,<Tj we have no common factor amongst all the integer coefficients of e. It 
+follows that e divides d\ ■ d2 ■ ■ dj^i ■ res(Si(xi), Gi{xi)). D 
+Proof of the correctness o/(3). We prove by induction on z. 
+Basts: U z = 1, then (3) is equivalent to Lemma 1. If z = 2, then (3) is equivalent to Theorem 5. 
+Inductive steps: Let (^ € 'R-oio^ a.- Then (^ is Z[(Ti][<T2] • • • [<r,_i]-integral since ^ is Z-integral. We 
+may find £i,£2, ■ ■ . ,Cis. ^ Z[(Ti][<T2] • •['Tj.i] and an integer e ^ such that regarding each fi as a 
+polynomial in aiO'2 • -(T^.i over the integers we have no common factor amongst all the coefficients 
+of these polynomials and 
+
+Suppose cr2i,...,<Tzi^^ are all the roots of Sz- Let 
+
+for j — 1,2, . ..,6s,. The last system of equations may be considered as a system of equations 
+in £ie-^ e Q((^i){<^-2)- ■ {o-z-i) for i = \,...,6s.- If we denote its determinant by A, then 
+A^ = disc(Sz). Since disc(Sz) € Z[<ti][<T2] • • ■ [(Tj_i], A is integral over Z[<Ti][<T2] • • • [(7^_i], not 
+necessarily lying in the field Q(<Ti)(a2) • • • (tr^). But Cramer's rule shows that the numbers T, = 
+Ae.e-^ are integral over Z[<Ti][(T2] ■ ■ ■ [cr,_i] since both <t^ and C are integral over Z[(Ti][(T2] • • • [o-^_i]; 
+thus AT. are also integral over Z[(Ti][(72] • • • [(t,_i]. But ATj = A^e^e-i = disc(5,)£ie-' are 
+in Q((Ti)((T2) • • ((^z-i); so that AT^ are in TJ,,,^, ...„._,; hence, by inductive hypothesis, AT. € 
+
+
+
+Multiple Extension Algebraic Number Fields 13 
+
+-t:, — -^ — Z[o-i][a2] • • [o-,_i]. It follows that e divides all the numbers CoiCa-, ■ ■ ■Ca^_^^ti 
+
+for « = l,...,5s. 1 when we regard a\,<f-i,- . -lOj as indeterminates. In Algorithm 2, '^z-\ = A" 
+and w ■ r,_i = *j_i; so that e divides all the numbers CaiCg^ ■ ■ ■Ca,_^ ■ tv ■ r,_i • £< for i = 
+1. ■ • > ^S. . when we regard <ti, (Tj, . . . , (Tj as indeterminates. But, by Lemma 6, we have that e di- 
+vides Co^Co^ ■ ■ Ca,_^ w ■ di ■ d2 ■ ■ ■d,^2 ■ re8(5i(xi),G(ri)). From Algorithm 2, we know that 
+Cff, = w ■ di ■ d2 ■ ■ ■d,_2 ■ re8(5i(xi), G(xi)). Thus, e divides Ca^Ca, ■ ■ Ca. and 
+
+Hence, 7^<„„,...,. C ^T-Z^ilM ■ • ■ [<t,]. D 
+
+5 Factoring Polynomials over Algebraic Number Fields 
+
+We'll present an application of Algorithm 1. Let us consider the factorization of monic squarefree 
+polynomials over algebraic number field Q(<Ti)((T2) • • • (ffj), where <Tj {j = I, . . ., z) are as in section 
+I (2). In this section, we discuss the case of j = 2. It is easy to extend the C2ise of z = 2 to the 
+general case. 
+
+Let A, B, a, 0, Ca,C0, TZa0 be as in section 3. Let / 6 Q(a)(/?)[x] be a monic squarefree polyno- 
+mial. Then we can write / € — Z[o][/3][r]. We want to choose a positive integer D such that / and 
+
+a 
+
+all the monic factors of/ in Q(a)(/?)[x] are in — Z[q][/?][x]. The following lemma has been shown 
+by Weinberger and Rothschild [8]: 
+
+Lemma 7 (Weinberger and Rothschild) Let g(x) 6 -V-aph] be momc, and suppose g{x) = 
+
+d 
+
+v{x)w{x) G Q(a)(/3), where v{x),w{x) are monic. Then v{x),w{x) G -TZaB[x]. 
+
+d 
+
+Since Z[q][/?] C Tlaff, we have f(x) € -TlapWi- Hence, by Lemma 7, the monic factors of 
+
+a 
+
+f{x) will also be in -Tlapix]. Thus, by (1), the monic factors of f{x) will be in Z[a][/?][x]. 
+
+a dCaCp 
+
+
+
+Multiple Extension Algebraic Number Fields 14 
+
+Therefore, we can take 
+
+D = dCaC0 
+
+such that / and all the monic factors of/ in Q(a)(/?)[x] are in ■T^Z[a][/?][x]. 
+
+The remainder of this section is similar to [6]. We choose p aa a prime number such that 
+
+p does not divide D • disc(,4) • disc(B) ■ re8(/, /'), 
+
+Let k be some positive integer. We denote by Zp the field of integers modulo p and by Z^,* the 
+ring of integers modulo p*. Since p and D are relatively prime, for any c G T^Z, (c modulo p) and 
+(c modulo p*) exist. For F = ^ c,t' G 7^Z[t] we denote the polynomial J^,(ci modulo p*)t* G Zp» [t] 
+
+i 
+
+by F/p» and denote the polynomial ^,{ci modulo p)<' G Zp[t] by Ffp. 
+
+Using Hensel's Lemma and Berlekamp's algorithm [1] for factoring over finite fileds, we can 
+construct a polynomial H G Z[<] such that H satisfies the following conditions: 
+
+H is monic, (4) 
+
+Hipk divides Ajpu in Zp»[<], (5) 
+
+Hfp is irreducible in Zp[<], (6) 
+
+(H/p)^ does not divide A/p in Zp[<] (7) 
+
+We denote by Zj,^ the finite field Zp[t]/{H/p) and by ZJ,» „ the ring Zpk[t]/{H/pk). For F = 
+'^Fi{t)u' G -TrZ[<][u] we denote by F/p ^ the polynomial 5Zi(^<7p modulo H/p)u' G Zp ^^[u] and 
+
+i 
+
+by F/pk H the polynomial X)i(^i7p» modulo H/pk)u' G Zp» j^[u]. Note that the working ring of each 
+modulo operation depends on its operands. 
+
+By Hensel's Lemma and Berlekamp's algorithm [2], we can also construct a polynomial H G 
+Z[a][u] such that 5 satisfies the following conditions: 
+
+E is monic, (8) 
+
+
+
+Multiple Extension Algebraic Number Fields 15 
+
+=/p»,tf divides fl/p»,H in Zj,t^[u], (9) 
+
+—/p,H is irreducible in Z'^[u], (10) 
+
+{E/p^h)^ does not divide B/pH in Zj,^[u] (11) 
+
+We denote by Z^^^^ the finite field Z;^[u]/(H/p,„) and by Z^^^^ the ring Z^.^[u]/(E/pV//)- For 
+
+F = 2J Fi(t,u)x' e -T^Z[<][u][x] we denote by F/pHs the polynomial ^i{Fi/p h modulo H/p //)r' 6 
+
+t 
+Zp"//,= H and by F/pkH,s the polynomial ^i{Fi/pi.n modulo E/p»,//)i' e ZJ,^^^^. 
+
+Again, by Hensel's Lemma and Berlekamp's algorithm [2], we construct a monic polynomial 
+
+h € 7TZ[a][^][z] such that h satisfies the following conditions: 
+
+h is monic, (12) 
+
+/«/p',//,H divides //p*,/f,H in Z^^^^^, (13) 
+
+h/p,H,3 is irreducible in Zp"^3[z], (14) 
+
+{h,p,H.E? does not divide //p.^.n in "Z'p^^.bI^] (15) 
+
+
+
+Let n = 6j and / = 6^ and let m be an integer such that I < m < n. We define L as the 
+
+1_ 
+D' 
+
+
+
+collection of polynomials g G — Z[a][/?][x] such that: (i) 6g < m, (ii) if i5j = m, then \esLd(g) 6 Z, 
+
+
+
+where lead(ir) denotes the leading coefficient of flr, (iii) /i/p»^= divides g/pi. h,s in Z'" y^=[x]. We 
+identify such a polynomial 
+
+m— 1 6b — i ^A — i 
+
+i = /i=0 i/ = 
+
+with the (m • (5b (Jyi + l)-dimensional vector (oooo, aooi, ■ ■ ■ , aoo«^-i, ■ • • , am-i.SB-i,s^-i,amoo)- We 
+define |(/| to be 2-norm of the vector g and define g^ax to be oo-norm of the vector g. It is not 
+difficult to see that L is a lattice in (_)"»*s*>»+i. From the fact that E and H and h are monic, it 
+follows that a basis of L is given by: 
+
+{^p''ct''0^x' : < u < Sh ,0 < fi < 6s,0 < i < 1} U 
+
+
+
+Multiple Extension Algebraic Number Fields 16 
+
+{1q''-<"//(q)/?*'x' : Sh < I' < 6a,0 < fi < 6^,0 < i < 1} U 
+{^q''0>'-^^E{0)x' ■.0<u<6AjB<ii<6B.0<i<l]U 
+{La''0>'hx'-' ■.0<u <6y^,0<^l<6B,l<i<m}U 
+{hx-—} 
+
+Let q = m ■ 6b ■ 6a + i- We identify the above basis with vectors 61,62,... ,6, 6 (7^)'- Then 
+61, 62,..., 6^ are linearly independent. The following theorem directly follows from A. Lenstra and 
+H. Lenstra and Lovasz [7, (1.11), (1.26), (1.37)]. 
+
+Theorem 8 Let N > 2 be an integer such that |D6j|^ < A^ for j = 1,2, ... ,q. There is an algorithm, 
+called LLL algorithm, that determines a vector b £ L such that b belongs to a basis of L, and such 
+that |6p < 2'~'|Ap for every A G L, A 7^ 0; the algorithm takes 0(q*\ogN) elementary operations 
+on integers having binary length O(q\og N). 
+
+Let ho € ttZ[q][/?][x] be the unique monic irreducible factor of / such that h/p,H.B divides 
+/»o/p,H,s in Zj,"^^[x] and let Q^ax = 1 + -4m« and /J^ax = 1 + (5^Smaxamax- Then, |q| < a^ax and 
+\0\ < /?max- Theorem 9 and Theorem 10 are the generalization of [6, (3. 6), (3. 11)]. 
+
+Theorena 9 Let b £ L satisfy 
+
+(l>/max((n + l)^M.5Ba^-V^^aJ ')')'" (ob^.Aim + l)6A6Ba'r,^^'l3'm^^')"y . (16) 
+Then b is divisible by ho in Q[a]\j3][x], and in particular gcd( f,b) ^ 1. 
+Theorem 10 Suppose that b is as m Theorem 8, and that 
+
+
+
+Multiple Extension Algebraic Number Fields 
+
+
+
+17 
+
+
+
+Then we have 6^ < m if and only if (16) is satisfied with b replaced by 6. 
+
+In (17), every variable is known except it and m. We calculate the leaist positive integer it for 
+which (17) holds with m replaced by n — 1. After it is determined, H, 3 and h can also be obtained. 
+Note that Sh and 6= can be determinated without knowing it. Then we run the following loop: 
+
+
+
+Loop 1: 
+
+
+
+
+
+
+
+
+
+
+
+
+For 
+
+
+m = /,/+ 1,. ..,n - 1 do 
+
+
+begin 
+
+
+
+
+
+
+
+
+
+
+1. 
+
+
+Construct the basis 6i, 62 
+
+
+. . . , 6^ of the latt 
+
+
+ice L as described in 
+
+
+the beginning 
+
+
+
+
+of this section, where q = 
+
+
+m ■ 6a • <5fl + 1. 
+
+
+
+
+
+
+
+
+
+
+2. 
+
+
+Apply the LLL algorithm 
+
+
+(see Theorem 8) 
+
+
+to the basis 61 
+
+
+,62,.. 
+
+
+.,6,; 
+
+
+and then 
+
+
+
+
+obtain a vector 6 belonging to a basis of L 
+
+
+such that |6p 
+
+
+< 21- 
+
+
+MAP 
+
+
+for every 
+
+
+
+
+XeL, X^O. 
+
+
+
+
+
+
+
+
+
+
+
+
+3. 
+
+
+If (16) is satisfied with 6 
+
+
+replaced by 5 then break. 
+
+
+
+
+
+
+
+
+end 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Suppose, after running the previous procedure, m = mo. If mo < n — 1, then a vector b was found. 
+We know from Theorem 10 that Sh^ < rriQ. Since we try the values m = /, /+1, . . . , n— 1 in succession 
+we also know that 6^^ > mo — 1, so Sh^ = mo. By Theorem 9, ho divides 6 in Q[a][/?][a;] which 
+implies, together with (5j < mo, that (5j = mo. Since ho is monic and, by the definition of lattice L, 
+lead(6) G Z, we have b = c ■ ho, for some constant c G Z. But ho & L and 6 belongs to a basis of L. 
+We conclude that c = ±1, so that b = ±/io. 
+
+If on the other hand mo = n, then we did not find a vector 6 satisfying (16). By Theorem 10, 
+6ho > n — 1; so that 5/,„ = n. With ho being a factor of /, we have ho = /. 
+
+Now, we know how to compute an irreducible factor of /. The following procedure completely 
+factors a monic squarefree polynomial / 6 Q[o][/^] [•<*]• 
+
+
+
+REFERENCES 
+
+
+
+procedure facionng (/ : polynomial); 
+begin 
+
+1. Use the above algorithm to compute an irreducible factor /iq of/. 
+
+2. if f = ho then retum(/io) else g := ///»o- 
+
+3. return(/io * faciortng{g)). 
+
+end 
+
+
+
+With Theorem 8, the number of arithmetic operations needed for Procedure factoring is 0{n^6\6g + 
+n^S^^B log«max + ^^ ^A^B 'og/^max + '^^^A^B 'og(d/mM)) and the integers on which these operations 
+performed have binary length 0(n^S\6g + n-6\8'^ logQmax + n^i5^(5^ \og 0m^ + n^6\6B log(a!/max))- 
+
+References 
+
+[1] E.R. Berlekamp. Factoring polynomials over finite fields. Bell System Tech. J., 46:1853-1859, 
+1967. 
+
+[2] E.R. Berlekamp. Factoring polynomials over large finite fields. Math. Comp., 24:713-735, 1970. 
+
+[3] B. Buchberger, G.E. Collins, Eind R. Loos. Computer Algebra. Spring- Verlag, New York, 2nd 
+edition, 1983. 
+
+[4] A.J. Goldstein and R.L. Graham. A hadamard-type bound on the coefficients of a determinant 
+of polynomials. SIAM Review, 16:394-395, 1974. 
+
+[5] I. N. Herstein. Topics tn Algebra. Xerox College Publishing, Lexington, Massachusetts, 2nd 
+edition, 1975. 
+
+[6] A.K. Lenstra. Factoring polynomials over algebraic number fields. Proceedings EUROCAL 83 
+(London) Springer LNCS, 162:245-254, 1983. 
+
+
+
+REFERENCES 19 
+
+[7] A.K. Lenstra, H.W. Lenstra, and L. Lovasz. Factoring polynomials with rational coefficients. 
+Math. Ann., 261:515-534, 1982. 
+
+[8] P.J. Weinberger and L.P. Rothschild. Factoring polynomials over algebraic number fields. ACM 
+Transactions on Mathematical Software, 2:335-350, 1976. 
+
+
+
+NYU COMPSCI TR-432 
+Ho, Chung-jen 
+Multiple extension 
+algebraic number fields. 
+
+c.l 
+
+
+
+NYU COMPSCI TR-432 
+HO, Chung-jen 
+Multiple extension 
+
+algebraic number tiex^ 
+
+
+
+I 
+
+
+
+
+This book may be kept 
+
+FOURTEEN DAYS 
+
+A fine will be charged for each day the book is kept overtime. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+CAYUORD 142 
+
+
+
+
+
+
+PRINTED IN USA. 
+
+
+

@@ -1,0 +1,681 @@
+
+LIBRARY 
+
+OF THE 
+
+MASSACHUSETTS INSTITUTE 
+OF TECHNOLOGY 
+
+
+
+ALFRED P. SLOAN SCHOOL OF MANAGEMENT 
+
+
+
+PRELIMINARY NOTES ON A MATHEMATICAL 
+ANALYSIS OF MANPOWER TRAINING PROGRAMS 
+
+Alan L. Patz 
+
+
+
+514-71 
+
+
+
+March 1971 
+
+
+
+MASSACHUSETTS 
+
+INSTITUTE OF TECHNOLOGY 
+
+50 MEMORIAL DRIVE 
+
+CAMBRIDGE, MASSACHUSETTS 02139 
+
+
+
+Dp we 
+
+
+
+
+MAh 12 1971 
+
+DtWEY ll-'^^RY ! 
+
+
+
+PRELIMINARY NOTES ON A MATHEMATICAL 
+ANALYSIS OF MANPOWER TRAINING PROGRAMS 
+
+Alan L. Patz 
+
+
+
+514-71 
+
+
+
+March 1971 
+
+
+
+Not to be reproduced in whole or in part without author's permission. 
+
+
+
+no. 51 ^^'y I 
+
+
+
+RECEIVED 
+APR 6 1971 
+M. I. T. LlbKMKiLS 
+
+
+
+ALAN L. PATZ 
+
+PRELIMINARY NOTES ON 
+A MATHEMATICAL ANALYSIS OF MANPOWER TRAINING PROGRAMS 
+
+The purpose of this paper is to present specific human ability 
+derelopment models in order to analyze the ability d07elopnent function 
+of oanpover training. Ability dereLopment, of course, is one of tND 
+aain training functions. Socialization is the other. Roughly speaking, 
+an individual is socialized vhea he not aaly knows what is eaqpeoted of 
+hint and vhat he can expect from others, but also iihen he accepts the 
+roles defined by these expecta^ons. Training, in this paper, is then 
+conceived of as a process vihloh develops the abilities necessary to 
+fulfill such eixpectations, and the first task will be to inquire into 
+the nature of ability dereloisaent. 
+
+The General Model and Specific Cases 
+
+Let A(t) and C(t) r^resent the amount and maxJiaam possible amount 
+respecti-vely of any specific ability at time t. At t = 0, let C(0) = C^, 
+Ignoring fatigue, attention span, and motivational effects for t^e 
+moment, assume that the time rate of change of ability ia aa^ aaviroqmeot 
+rffa"Arlrf the exercise of ^^t ability is as given in the equation 
+
+For exanrple, suppose the ability in question is the ability to solve 
+ordinary differential equations. Then in the absence of formal tr ainin g 
+in differssitial equations, a specific individual may be characterized by 
+k > if he has had previous expertence with calculus and k » if he has 
+had no previous experience with calculus. Formal training may increase 
+
+5r?7i37 
+
+
+
+k to k*>k>0. 
+
+Equation (l) is a first order linear differential equation as 
+can be seen upon rearrangement to 
+
+It embodies the basic assumption of this paper that the rate of change 
+of ability is directly related to the difference C(t) - A(t), i.e., 
+dA(t)/dt decreases as C(t) - A(t) decreases. The factor k will be 
+given different interpretations in the discussion ithidi follows. For 
+now it can be regarded as a constant of proportionality. 
+
+Assaming that k is a constant, the solution^ to equation (2) is 
+given by 
+
+where u(t) = axplj k dx { = e^ and x is a duanny variable. In the case 
+at hand 
+
+(3) 
+
+
+
+A -^ Jl, l_U J -JB- Cc^)> cU-f C j 
+
+
+
+and it is clear that the solution depends upon ^atever auiditional 
+assunrotions are made concerning C(t). 
+
+Case l! C(t) = C^ 
+
+The singxLest assto^tion for C(t) is that it is a constant function 
+of time, i.e., C(t) = Cq. Equation (3) tien resolves to 
+
+1. Cf. vailiam E. Boyce & Richard C. DiPrinsa, Introduction to 
+Differential Eauat3.ons (New York: Wiley, 1970), pp. 7-18. 
+
+
+
+With the initial condition A(0) = A^, c = A^ - C^, and 
+
+(5) /?= a (f/--^"") ^ 4=^-'^'^ 
+
+If A(0) = 0, the simpler restilt 
+
+(6) /f = Co O--^-'^^) 
+
+
+
+is obtained. 
+
+It is nov dear that given the assttn^tion C(t) » C^, a standard 
+learning theory assun^tion, ' the value of foraal txaining votild be 
+difficult to detect unless k were very small and oould be significantly 
+enhanced with foxmal training. Otherwise, the approach to maxismm 
+ability, Cq, takes approxiismt^y th© saa© amount of tins nith or 
+without formal training. 
+
+Case H; C(t) « Cq and R g k(t) 
+
+On the other hand, suppose k were very small and srsl^jeot to the 
+InfLuesioe of foxmal training. Then k would also be a fonstion of t 
+and equation (2) would become 
+
+
+
+^-^ ^ka^/i(i^= kC-i^a 
+
+
+
+"■■" cut 
+
+continuing with the asstm^ion that C(t) » Cq, Now A(t) depends upon 
+
+additional assuoptions for k(t) as well as C(t). A rather innocuous 
+
+a8SUD?)tion for k(t) is that it is a monotonically increasing fonction 
+
+of a form that approximately satisfies the dlffereotial equation 
+
+1. Of, Ernest R, Hilgard & Gordon H. Bower, Theories of "LcArrAy^ ^ 
+(3d ed.; New Toi^: Appleton-Century-Crofts, 1966). 
+
+
+
+(8) -^^ = o,^ 
+
+^ere c^, O2>0 are constants. That is, although k(t) increases 
+with t, it increases at a decreasing rate. Solving for k(t), 
+
+irtiere k(0) = k. 
+
+The solution for u(t) is now given by 
+
+
+
+(10) 
+
+
+
+m(^^ = *=^p [5 ^d'-/')4^1 
+
+
+
+where x is a danmy variable for t in eqttation (9). The integral in 
+
+equation (10) can be siD?)lified by applying the first mean-value 
+
+2 
+theorem for integrals, and the result is 
+
+
+
+(11) 
+
+
+
+xCid- <=rxp[JcCv.)iJ ^ Ji!"''^ 
+
+
+
+^ere £ v^ 1 1 and k^ = k(v^ ) , A good approximation for k^ is obtained 
+by using equation (9). Thus, 
+
+(12) l^,- kcvr)^ %0-j^''^')^k ^ ^ ^^ = S 
+
+Solving again for A(t), 
+
+
+
+(13) 
+
+
+
+/I ^ J2^ LJ -^ kc^^Cc^dp -^-cj 
+
+
+
+1, Mathenatical tractaWlity, of course, is one reason for 
+choosing this particular functional form. 
+
+2. Cf. Ivan S, Sokolnikoff, AdTanced Calculus (New York: 
+McGraw-Hill, 1939), pp. 113-115. 
+
+
+
+The integral in equation (13) can be siutfjlifled bj applying the 
+
+2 
+second mean-value theorem for integrals for positive monotone 
+
+
+
+increasing functions such as Ic(t). ^e resiilt is 
+
+(14) 
+
+
+
+/) = ^-^* [C • kCi) i*-^^V * = ] 
+
+
+
+idiere 0*V2- t. Here B is an even better approximation for k(t). 
+Thus, 
+
+(15) /I = M.' £C ^ j^^ -a- ^c46 ^ c^ 
+
+Squation (15) reduces to 
+
+-St ^ St \ 
+
+*<&ere the constant m = c - C^e 2, Again, 
+
+(16) /? = (ToC/--^"**) 1- /^'o^'" 
+idien assuming A(0) = A^, or 
+
+(17) /?= a(:/--^-^*) 
+
+^ai assondng A(0) = 0, The results in equations (6) and (l7) are 
+seen to be identical eoccept for the constant B » (c^/c2) + k. 
+
+This last result is particularly useful in that is pentdts a 
+simple derivation of the total increase in useful abili"^ over a long 
+period of tiae. The total increase in useful ability is given by 
+
+1. Ibid ., pp. 115-117. 
+
+
+
+(18) /^ = ^ [C Q-^ ^^) - C ^/--^-^^3]^ 
+
+This rather simple integral resolves to 
+
+(19) ^= Co (^ g-^^^fe^-^^^-g^-^ fj 
+
+
+
+A'- C r^) 
+
+
+
+^Aich approaches 
+
+(20) 
+
+for large values of t. Substituting B = (0^/03) + k, 
+
+(21) /? = Co ( c,k-h C^k"^) 
+
+How, continuing with the assxn^tion that k is very small, then 
+
+2 
+
+S2k <« Q.jk and 
+
+(22) 'R - ^oKc^lITc^J ^ ^o(cf^y = 
+
+
+
+C 
+
+
+
+Thus, even under the restrictive assun5)tion that C(t) «= C^, the 
+intuitive feeling (and oftentiiaes obserTahle result) that foznal 
+manpower training is valuable has been made perfectly dear. The 
+total increase in useful ability, R = C^j/k, mast be very la^pge unless 
+Cq is v«:y small. 
+
+The step from the assui^tion that C(t) = C^, a coaastant, to the 
+altesTsativQ assuiqytion that C varies with time, of course, is a small 
+one. Various functional fonas for C(t), such as those resulting from 
+solutions to dC/dt = coe"^"^ and dC/dt = Cet/(C - Cq) where o«, c^, Cc, 
+
+
+
+and C(0) = C^ are constants, can be substituted into equation (2) 
+and the consequences determined. The factor k may or may not be 
+assumed constant daring such an eocereise. 
+
+Another alternative assun^jtion to C(t) = C is 
+
+and it has more intuitive appeal than arbitrary substitutions for 
+C(t) in equation (2). In other words, siiqply assume that the rate 
+of change of the maximtm possible amount of any specific ability is 
+directly proportional to the rate of change of ability. A physical 
+analogy to this hypothesized psychological i^enomenon uould be the 
+process of pouring water into an ©cpansible container such as a 
+balloon. The balloon has an initial capacity C^, but its capacity 
+increases under the weight of the water, 
+
+C(»BbiJ3ing equations (i) and (23) with the initial conditions 
+A(0) =0 and C(0) = G^ leads to the ssrstan of first order linear 
+differential equations 
+
+^ ^ JcC - A/1 , ^Co^-a 
+
+
+
+-^ - f"-^ -r 
+
+
+
+The solution to this system, assuming p and k are constants, is 
+
+gi-^en by 
+
+
+
+1. Boyce & DiPrima, on. cit .. pp. 209-213. 
+
+
+
+8 
+
+Notloe that unless p =: 1, the amount and naxiBium possili^e amount of 
+ability do not increase without limit but to C^/d - p). The 
+distribution of p and k is discussed in the following section. 
+
+Before reTiewing l^e conclusions of the analyses in these three 
+oases, consider the systan (2^) written with p and k as variables, i.e.. 
+
+System (2?) is the case %*iere p and k are subject to the influence of 
+fomal training. Differentiating the first of th^e equations and 
+substituting the second into the result yields 
+
+(28) ^ ^ -^ C€)[!- paq ^^k'Ci)A^k 'a) c 
+
+Equation (28) can be simplified by relying upon approximations 
+similar to the one posited in equation (9). Thus, assuming tjiat 
+variations in p and k are similar under the influence of formal 
+trajjiitsi;, the factor k(t)L 1 - p(t)j can be approximated by the 
+prodact of two constants, k*(l - p*). This result, not elaborated 
+here, leads to the farther approximation that k»(t) « 0, and 
+equation (28) becomes 
+
+
+
+Then, using the initial conditions that A(0) = and A'(0) = k^C^, the 
+solution to equation (29) is given by 
+
+The similarity between this result and equation (25) is not surprising 
+given the similarity already obtained between equations (6) and (17). 
+And, if the effect of training is to bring p* close to 1.0, its 
+consequence is a rather spectacular increase in the final level of 
+ability, via,, 
+
+(31) jr^ - jr^ = ^- L/T-vr/'V 
+
+Again, this last result can be sii^lified by noting that if p*a*1,0, 
+then pp* - psO.O. Thus, 
+
+(3=) Tip - T^ - ^-^ /-f'J 
+
+For eocaiBple, suppose p = 0.5 and p* = 0.99. Thai pp* = 0,495 and 
+
+ppf» - p «j -0.005. This yields an increase in the final level 4f ability, 
+
+over and above what it would have been without formal training, of 
+
+
+
+10 
+
+
+
+Conclusions 
+
+The first conclusion that can be drawn from the preceding 
+analyses is that the training effect is to shift the ability development 
+curve upward and to the left. This is obvious \6i&n. con^ring equation 
+(17) in Case II with equation (6) in Oase I and equation (30) with 
+equation (25) in Case HI. The Case m upwai^i shift, of course, is 
+more dramatic than the Case II shift. This conclusion may be intuitively 
+obvious, but intxiition is not always so reliable in the face of critical 
+analysis. In this respect, a Ivss intuitive conclusion is that the 
+standard learning theory assuntptions embodied in Case I make many 
+training programs difficult to Justify. Unless k, the rate of developni«it, 
+is very siaall and subject to the influence of training, asy manpower 
+training program would appear to be a bad investment. 
+
+The deveLopment in Case HI is an obvious alternative to Case I, 
+and it leads to equation (32) which is the increase in the final level 
+of ability over and above irtiat it would have been without formal training. 
+In the process of obtaining equation (32), however, the constants p and k 
+in equation (25) were not fully discussed. It is not difficult to show 
+that in order to be consistait with equation (1), a reasonable hypothesis 
+is teat 0<k< 1. The same hypothesis must hold for the constant p xailess 
+one is willing to believe that ability grows without limit or decreases 
+as ii result of training. Sometimes ability does decrease as a result of 
+training, aig., brainwashing may decrease an individual's powers of 
+'iiscrimJUiation. For normal training purposes, however, it would seem 
+reasonable to assume that both p and k lie within the open interval (0, 1), 
+
+
+
+11 
+
+
+
+Thus, prior to training some population of individuals has one 
+distribution over the unit square, say S, described hj 
+
+After training this pop\d.ation has another distribution over the same 
+square. 
+
+Returning to equation (32), it is obvious that the most valtiable 
+training programs are those that focus on individuals with low p values 
+and increase these to p* values which are dose to 1,0, Even the beet 
+training program is worthless if the average value of p is already 
+close to 1.0, Thus, assuming that ability and performance are 
+reasonably weU correlated, simple measures of increased proficiency 
+are insufficient for comparing different training methods. The worst 
+possible training method, for example, will not look too bad ^en 
+compared with a good one if both methods are tested oa grox;Q>s teat have 
+high p values. 
+
+The development of methods for measuring p and k is then one of 
+two main problems for further study. Elaborating on the theoretical 
+foundations established in this paper is the other, and further 
+elaborations may indicate some reductions in the magnitude of the 
+measurement problem. Notice that p and k measureanaits in themselves 
+are a definition of an individual's intelligence or capacilgr to learn 
+in terms of a rate of developmait, k, and a constant of proportionality, 
+p, between dC/dt and dA/dt, Lastly, further theoretical develoixnents 
+should begin to include the motivational, span of attention, and 
+fatigue factors ignored in this paper as well as the financial 
+considerations xmderlying trainiiig programs. 
+
+
+
+Mk Du, 
+
+
+
+DEC 05 7g 
+
+
+
+
+
+
+3 '8* 
+
+
+
+^ 
+
+
+
+Lib-26-67 
+
+
+
+Mil LIBRARIES 
+
+
+
+3 ID 
+
+
+
+Sl> 
+
+
+
+-71 
+
+
+
+aO DD3 TDb E4E 
+
+
+
+3 Toa 
+
+
+
+^'^?-7' 
+
+
+
+003 102 530 
+
+
+
+"'^-'"illlMlll ?''^''" 
+
+
+
+r,06D 003 loe 5Ma ^ ^^^ 
+
+
+
+3 TOflo 003 T02 sai 
+
+
+
+No 
+
+
+
+MIT LIBHARIES 
+
+
+
+?/■?• 
+
+
+
+7/ 
+
+
+
+3 TOaO 003 a75 E7E 
+
+
+
+MIT LIBRARIES 
+
+
+
+3 TOaO 00 
+
+
+
+bl 341 ^'^~>/ 
+
+
+
+'.T. . -It- 
+
+
+
+^'7-7/ 
+
+
+
+3 TOaO 003 675 SM'=i 
+
+
+
+3 lOfiO 
+
+
+
+hl8-'7l 
+
+
+
+03 fibi 3E5 
+
+Mn LIBRARIES 
+
+
+
+S"!^ 
+
+
+
+'7' 
+
+
+
+3 TOaO 003 a75 2S3 
+
+
+
+MIT LIBRARIES 
+
+
+
+3 TOaO 003 a7S 231 
+
+
+
+52t»'7/ 
+
+
+
+5ZI 
+
+
+
+--7/ 
+
+
+
+003 TOt. 135 
+
+
+
+MIT , M.HaWlES 
+
+
+
+3 Toa 
+
+
+
+3 Toao 003 a75 lai 
+
+
+
+511-7' 
+
+
+

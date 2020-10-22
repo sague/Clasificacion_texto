@@ -1,0 +1,2950 @@
+QA 
+Z6\ 
+
+H3 
+
+
+
+UC-NRLF 
+
+
+
+B ^ s^fi a7S 
+
+
+
+A Geometrical Vector \ 
+Algeb 
+
+
+
+By T. p! 
+
+
+
+
+
+
+
+'1 t"V 
+
+
+
+
+) 
+
+
+1 
+
+
+1 
+
+
+! ! ! 
+
+
+^_^fejj^ 
+
+
+A 
+
+
+WE.- 
+
+
+VA'. 
+
+
+'>->'"■.■>-,'.■ , HI 
+
+
+
+
+
+
+
+A* 
+
+
+
+A Geometrical Vector Algebra 
+
+
+
+By 
+
+
+
+T. PROCTOR HALL, VANCOUVER, CANADA 
+
+
+
+CONTENTS 
+
+
+
+Pagre 
+
+1. Introduction 1 
+
+2. Notation 1 
+
+3. Cosine AB 2 
+
+4. Addition and Subtraction... 2 
+
+5. Collinear Vectors 3 
+
+6. Coplanar Vectors 3 
+
+7. Multiplication 3 
+
+8. Collinear Multiplier 4 
+
+9. Perpendicular Multiplier 4 
+
+10. The Product AB 4 
+
+11. Permutation of Factors 5 
+
+12. Operand Distributive 5 
+
+13. Operator not Distributive. . 6 
+
+14. Factors not Permutable 6 
+
+15. Powers of Operator 7 
+
+16. Laws of Multiplication 7 
+
+17. Perpendicular Factors 7 
+
+18. Division 8 
+
+19. A"B; General Formula 8 
+
+20. Quaternions 9 
+
+21. Vector Arcs 10 
+
+22. Sum of Circular and Straight 
+
+Vectors 10 
+
+23. Sum of Circular Vectors... 11 
+
+24. Spherical Triangle 12 
+
+
+
+Page 
+
+25. Conic Vectors 13 
+
+26. Differentiation 14 
+
+27. Differential Coefficient of 
+
+A"B 15 
+
+28. Curvature 16 
+
+29. Linear Loci 16 
+
+30. Surface Loci 16 
+
+31. Solid Loci 17 
+
+32. Common Regions 17 
+
+33. Projections 20 
+
+34. Plane Algebra 21 
+
+35. Four-Space Algebra 21 
+
+36. Multiplication in 4-space... 21 
+
+37. Perpendicular Vectors in 
+
+4-space 22 
+
+38. Coplanar Equations 23 
+
+39. Perpendicular to a Vector 23 
+
+40. Normal to a Plane 23 
+
+41. Normal to a 3-flat 24 
+
+42. W, V, F and N 25 
+
+43. The Product ABC 25 
+
+44. Quaternion Rotors 26 
+
+45. Intersecting Loci 26 
+
+43. Projections 27 
+
+47. Projections of a Regular 
+
+Tessaract on a 3-flat.. . 28 
+
+
+
+301858 
+
+
+
+A §0omctriral Brctar Alarbm 
+
+
+
+By T. PROCTOR HALL, M.A.. Ph. D., M.D. 
+
+
+
+1. The laws of operation of any algebra are ultimately based upon its 
+definitions. If the definitions are geometrical the algebraic operations have 
+geometric correspondences. The operations of addition and subtraction in 
+common algebra, for example, correspond to the geometric addition and 
+subtraction of straight lines, vectors, surfaces, etc. 
+
+In this algebra new definitions of vector multiplication and division are 
+adopted, in consequence of which all algebraic operations upon vectors 
+(directed unlocated straight lines or steps), or rather upon vector symbols, 
+correspond to geometric operations in space upon the vectors themselves ; 
+and every algebraic vector expression con-esponds to some geometric 
+configuration of the vectors themselves. 
+
+In every vector demonstration or problem, therefore, the student may 
+think in terms of either algebra or geometi-y or both ; and may at any time 
+change from one realm of thot to the other with no break in the continuity. 
+
+This algebra is developed first in terms of analytical geometry for 
+three-fold space, and is then adapted to two-fold and to four-fold space. 
+Complex numbers, spherical trigonometry, and quaternion rotations, appear 
+as special cases. 
+
+2. NOTATION.— Taking three rectangular axes X, Y, Z, let x, y. z 
+
+denote unit vectors (steps) outward from the centre 0, along the axes. 
+Unit vectors in the opposite direction from are denoted by x, y, z. 
+Vectors in general are herein denoted by black faced Gothic capitals, and 
+the corresponding unit vectors by black faced italics. For purposes of 
+designation and operation all vectors (unless otherwise indicated) are under- 
+stood to start from O, the centre of coordinates. 
+
+Then if A is any vector, a is its length, a is unit length of the same 
+vector, a^ x, a,, y, a, z aie tie vector components of A along X, Y, Z, and 
+flx, Qy, fl, are the lengths of these components. 
+
+Then A = aa 
+
+— a^ X -\- Oy y -\- a^ z by vector addition. 
+d^ ^= a'i -\- d'y -\- di by solid geometry. 
+
+The symbol A is used to indicate (1) the vector from O to the point 
+whose rectangular coordinates are «^, Oj, o, ; (2) motion from O to the 
+extremity of A ; (3) a rotor, defined in ^7. 
+
+
+
+Z A, GSOMETRICAL VECTOR ALGEBRA 
+
+The Ine or locus of A is expressed by an elongated A thus /A, and 
+any part of this locus, from m to n, is written ,,,/a. Surface loci are 
+ordinarily expressed by two I's and solid loci by three is. 
+
+
+
+3. To express the cosine of the angle between two vectors in terms of 
+the coordinates of the vectors. 
+
+Let c be the length of the line joining the 
+extremities of the vectors A. B, fi-om O. 
+
+By solid geometry — 
+
+c2 = (a, - Z>J2 + (o^ - Z>y)' + (o. - by 
+
+By plane trigonometry — 
+
+c'' = a- -\- b' - 2ab cos A B. 
+
+a^ b^ -\- Gy b^ -{- a,, b.,. Sab 
+
+
+
+
+Fig. 1. 
+Therefore, cos A B = 
+
+
+
+a b ab 
+
+where Sab =^ the sum of the a b products ^ ab cos A B. 
+If S,.i, = O, A B. and conversely. 
+
+Example 1. — Find the angle between the vectors x + 2y and 2x-y-|-c^. 
+Here S ^ 0, and the vectors are perpendicular. 
+
+Example 2. — What angles does the vector 2x - y -(-z (= A) make with 
+
+the axes x, y, z ? 
+
+2 -1 1 
+
+a = ^ G; .: cos A X = ^ Q , cos Ay = j 6 - cos Az = ^6 • 
+
+
+
+4. ADDITION AND SUBTRACTION.— Addition is geometrically 
+defined as the piocess of making the second vector step from the extremity 
+of the first. ^ he sum is the new vector from O to the extremity of the 
+second vector thus added. 
+
+Algebraically addition is performed by resolving the vectors into their 
+components and adding these. 
+
+A + B = (a, X + Qy y -[- a, z) + (A, x + Z>, y + b,z) 
+= (fi^^bj X + UJy-\-b,.) y + {a,r{-bj z. 
+
+Subti'action is addition of the negative of a vectoi-. 
+
+Hence, both geometi-ically and algebraically vector terms are commut- 
+ative. 
+
+A B = B + A. 
+
+
+
+A GEOMETRICAL VECTOR ALGEBRA 3 
+
+5. COLLINEAR VECTORS.— Two vectors A. B, are in the same line 
+when 
+
+A EEE nB, 
+
+
+
+Ox 
+
+67 
+
+
+
+
+
+
+If n is positive, A and B are in the same direction ; if negative, A and B 
+are opposite. \i n — \, A. ^^ B. 
+
+
+
+6. COPLANAR VECTORS.— Three vectors, A. B. C. are in the same 
+plane when another vector, K, can be found which is peipendicular to each 
+of them. Then S^k = S^k = Sek = 0, by i^3. Eliminating k^, kj,, k^ we 
+get the coplanar equation 
+
+\a,byC^\ = 0. 
+
+The determinant ' a^ h, c, is six times the volume of the tetrahedion whose 
+corners are O A B C. When this volume is zero A, B. C. are coplanar. 
+
+Example. Find the conditions under which A is jjeipendicular to 
+C= X + z, and in the B C plane where B - 2x - y, 3. 
+
+The condition of perpendicularity is 
+
+S,., = 0, or a^-\- a^ = 0. 
+
+The coplanar equation is 
+
+2 -, 3 
+1 1 
+
+flx Oy Oi 
+
+Ther^ore A = o^ (r - y, 3- z). 
+
+
+
+= 0. 
+
+
+
+7. MULTIPLICATION of the vector B by the vector A is written 
+A B, and is defined geometrically as the combined oi>erations, 
+
+(1) Extension of B until its length is ab, 
+
+(2) Simultaneous rotation of B thru 90^ about A as an axis, in a 
+
+direction which is right handed or clockwise when facing in 
+
+the positive direction of A. 
+Each vector multiplier is a tensor-rotor. The rotor power of all vectors is 
+the same and needs no separate expression at this stage. 
+
+The product AB is that vector from O whose extremity is the final 
+position of the point B after extension and rotation. The locus of AB 
+is the curve traced by the point B during the operation. 
+
+ABC means the operation of A on the product BC, or 
+ABC m: A. BC. 
+Also A" B ^ A. AB. etc. 
+
+
+
+A GEOMETRICAL VECTOR ALGEBRA 
+
+
+
+It next becomes necessary to find the laws of algebraic multiplication 
+that correspond to the geometric changes here defined. 
+
+8. Multiplication by a collinear vector makes no change except in 
+length or sign, 
+
+XX = X 
+
+XX = X 
+
+XX = X 
+
+X X = X 
+
+Aa = A, etc. 
+
+9. Unit perpendicular vectors give the following results which are 
+geometrically evident. 
+
+xy — z ,xy = z 
+
+y xz = y xz = y 
+
+xy— z xy = z 
+
+xz = y xz = y 
+
+and similarly for y and z as operators. 
+
+X 
+
+Here the laws of signs are the same as 
+
+in common algebra, so long as the factors 
+
+are in alphabetical circular older; 
+Fig. 2 
+
+xy = z ^ xy, 
+
+xy ~ z ■= xy =— xy. 
+
+But reversing the order of the factors changes the sign of the product ; 
+
+xy — z 
+yx = z. 
+The second power of an unit perpendicular operator is equivalent to -1, 
+
+x-y = xz ^ y 
+x^y = X z = y. 
+The fourth power leaves the operand unchanged, 
+
+X V ^ x-y ^ y. 
+When the vectors are not units the product of their tensors is pi-efixed to 
+
+the vector product, 
+
+ax. by^ab. xy — abz. 
+
+10. To find the algebraic product of any two vectors. Let the product 
+be K = AB. Draw KD l O A, and OV 
+equal and parallel to D K. Then the length 
+
+OD is 
+
+D = K cos A K 
+
+=aZ> cos A B 
+
+= Sab, bg >?8. 
+
+As vectors 0K = 0D + DK, 
+or K = S,,, a + V. 
+Fig. 3 
+
+
+
+
+A GEOMETRICAL VECTOR ALGEBRA 
+
+To determine V we have the equations of perpendicularity, 
+Sav = o„ v^ -\- Oy Vy + a, v^ = o 
+
+Sbv = ^x i'x + ^y i'y + ^2 i'z = O, 
+
+and from the triangle O D K, 
+
+i>l. -\- v\ -\- vl =^ V- ^ a-b- — S-. 
+
+Solving we get 
+
+y^ ^ Oj. Z>2 — Oj^by 
+Vy ^= a^b^ — a„b^ 
+v^ = a^by — Qyb^. 
+
+Hence the "Vector Normal" to A. B, is 
+
+
+
+V = 
+
+
+
+QxOy 
+
+
+Oz 
+
+
+b.by 
+
+
+b. 
+
+
+X y 
+
+
+z 
+
+
+
+and its length is 
+
+
+
+V = y a'ti'-^'' = ab sin AB. 
+
+
+
+The product K is thus expressed in terms of the given vectors and 
+their components, in the equation 
+
+AB =r Sa + V. 
+
+Example. Find the product AB when 
+
+A=3y — Jf, B = 3*-y. 
+Here S = -6, V = 8x, o = , 10, 
+
+... AB 8x -^--i?(3y-'2). 
+5 
+
+11. PERMUTATION OF FACTORS. It is geometrically and alge- 
+braically evident that 
+
+Sab ^^ Sba 
+
+and that V.b = - Vb.- 
+
+Hence B A -- Si,,. i> + V^, 
+
+= Sab to - V.b 
+which is not equal to A B. 
+Changing the order of the factors changes the vector p»«oduct. Vectors 
+are not permutable. 
+
+
+
+12. OPERAND DISTRIBUTIVE. To find the product A (B :- C) 
+let B - C = D. 
+
+so that </^ = Z>x — Cx 
+
+dy = by — Cy 
+
+d^ = b^ ± Cj. 
+
+
+
+6 A GEOMETRICAL VECTOR ALGEBRA 
+
+Then A (B + C) = AD 
+
+-- S^d a + Vad 
+
+= (Sab ± Sae) a + V,b ± V,e 
+
+= (Sab a + V,b) ± (Sac a + V,,) 
+-^ AB ± AC. 
+The operand is therefore distributive. 
+
+
+
+13. OPERATOR NOT DISTRIBUTIVE. To find the product 
+(A ± B)C, let A t B = K so that 
+k, = a,± b, 
+
+ky = Qy ±: by 
+
+A^j = Oz ± K 
+
+k^ = d" -\- b-" ±. 2 Sab, by §3. 
+
+
+
+and 
+
+Then 
+
+
+
+(A 
+
+
+
+B)C = KC 
+
+= Sue #f + Vke 
+Sa. ± Sb 
+
+
+
+1 a- + Z)^ zt 2 S. 
+which is not equal to AC ± BC. 
+Hence the operator is not in general distributive 
+
+
+
+(A ± B) + (V. 
+
+
+
+Vb.) 
+
+
+
+14. FACTORS MUST.NOT CHANGE ASSOCIATION. 
+A B C = A (Sbc b + Vbc) 
+
+
+
+= -^AB 
+b 
+
+
+
+AV. 
+
+
+
+%-|^' A+^V3b+ U.A.c.la + SaeB-SabC. 
+
+
+
+To expand A B. C, let K = A B, so that 
+
+A B. C = K C = S,, If + Vk 
+
+i Sab ^a 
+
+
+
+a 
+
+
+
+— -\- \ a^byC^ 
+
+
+
+a b 
+
+
+
+V. 
+
+
+
++ 
+
+
+
+Oj. b,, \ , \ a^ b^ 
+Cx Cy 
+
+X y 
+
+
+
+Ox by 
+
+c. 
+
+
+
+which is not equal to ABC. 
+
+Hence the association of a factor must not in general be altered. 
+But if C = A these two products become identical, and therefore 
+A. BA = AB. A. 
+
+
+
+- A GEOMETRICAL VECTOR ALGEBRA 7 
+
+15. POWERS OF AN OPERATOR. 
+
+AB = Sa + V 
+
+A'B = A. AB = A (Sa + V) 
+
+= SA + AV 
+
+= 2 SA — a^B by expansion and multiplication. 
+A^B - A (2SA- a-B) 
+
+= 2 a^ S a - aM S a + V) 
+
+= a^ (Sa — V), which is geometrically evident. 
+A'B = a^ Sa - oMSa - a-B) 
+
+= a* B, which is also geometrically evident. 
+From these results it is easy to write the expansion of any value of 
+A"B when /J is a positive integer. 
+
+16. LAWS OF MULTIPLICATION, summary. 
+
+(1) Factors are not permutable (>;11) 
+
+A B is not equal to B A. 
+
+(2) The operand is distributive (?512) 
+
+A (B it C) = AB - AC, 
+but the operator is not (??13) 
+
+(A B) C is not equal to AC ^ AC. 
+
+(3) The association of a factor must not be changed (f;14). 
+
+A. B C is not equal to A B. C 
+but A. B A AB. A. 
+
+(4) The fourth power of an operator is equivalent to the 
+fourth power of its tensor (^15). 
+
+(5) The common laws of signs are true for opera ' and 
+product ; not for the operator. 
+
+17. PERPENDICULAR VECTORS. When A.B.C are perpen- 
+dicular, S,i. = S^c = Sh, = o, (?$3), and AB = V, (jilS). 
+
+Then the laws of J;16 become the following: 
+
+(1) Permuting the factors, i.e., interchanging operator and 
+operand, changes the sign of the product. 
+
+B A = Vba = - Vab = - A B. 
+
+(2) Both operator and operand are distributive. 
+
+(A = B)C = AC rt BC 
+A (B ± C) = AB = AC. 
+
+
+
+8 A GEOMETRICAL VECTOR ALGEBRA 
+
+(3) The association of a factor must not be changed. 
+
+A. B C is not equal to AB.C. 
+but A. BA = AB. A. 
+
+(4) The square of an operator is -1 times the square of its 
+tensor. 
+
+A'B = — a-B. 
+
+(5) The common laws of signs hold true. 
+
+If a, b, c be any three unit perpendicular vectors in the 
+same circular order as x, y, z; then ab = c^ be =^ a, 
+ca ^^ b, and these vectors may serve as units of the 
+system, as well as x, y and z. 
+
+18. DIVISION is the inverse of multiplication, so that if 
+
+AB = C 
+
+C 
+
+^ = A-C=B. 
+
+Geometrically, division is a negative turn of 90° about the divisor 
+
+(identical in this respect with multiplication by the negative of the divisor) 
+
+and reduction in length to that given by the quotient of the tensors. 
+
+
+
+19. GENERAL FORMULA for A" B where n is real. 
+
+
+
+
+Let OA, OB, be the vectors 
+A. B, and let O C be in line 
+with their vector product, so 
+that A" B = a" times OC. 
+
+Let BCT be the circle of 
+revolution of B about A; N 
+its centre; N B, NO, its radii. 
+Draw CD j NB; DE || BO. 
+Let . CNB = (^ = ;7^ be 
+the angle of rotation of B. 
+
+
+
+Then NC = NB = -, where v is the length of V^,, 
+
+n 
+
+
+
+D C = ^ S//J 6, 
+
+D E = B O ^g = ^ COS (y, 
+
+OE=DBj;^ = ^ vers 0. cot A B 
+
+
+
+= ^ vers B. - = ^ vers 0. 
+
+
+
+A GEOMETRICAL VECTOR ALGEBRA 9 
+
+As vectors OC = OE + ED + DC 
+
+S v 
+
+= a vers d + B cos d + - sin 6 
+a a 
+
+.: A" B = a". O C 
+
+= a"' (Sa vers 6 + a B cos d + V sin $). 
+
+This formula, being true for all real values of n, includes products, 
+quotients, powers and roots of vector operators. 
+
+Example. — Two rods, A and B, are joined at one end. A is one foot 
+long, and the peip3ndicular distance of its free end from B is six inches. 
+B is turned 60° about the axis of A, then A is turned 90° in the same 
+direction about the new axis of B. Find the new position of A. 
+
+Let the joined ends be at O. Let B = bx, and A a^ x -\- a^y. 
+Since a — 1, and Oy = |, A = J (x i 3 + y)- 
+
+The result of the first rotation is represented by 
+
+C = A^B= Sa vers 60° + B cos 60° + V sin 60° 
+
+== «' (7x + y , 3 - 2x , 3). 
+
+The second rotation is 
+c A = S c + V,, 
+
+= 1 (9x , 3 — 3y - 2i), 
+which gives the final position of the free end of A. 
+
+
+
+20. QUATERNIONS. 
+
+When A J B, S = 
+and V = AB. (f;17). 
+
+Then A"B = a" (B cos ^ + a B sin ^) 
+
+= a" (cos ^ a sin H) B. 
+
+Now a- as a perpendicular operator is equivalent to -1; and by ex- 
+pansion in series, exactly as with the complex {cos d -{- i sin H), it may 
+be shown that the rotor of A" 
+
+cos 6 ^a sin 6 = e**^ 
+where is the angle and a the axis of rotation. , 
+
+Hence for perpendicular vectors 
+
+A"B = a"e"^ B. 
+
+
+
+10 
+
+
+
+A GEOMETRICAL VECTOR ALGEBRA 
+
+
+
+The operator A" is a tensor-rotor-vector, or a directed quaternion, 
+when applied to vectors perpendicular to A. It has the four funda- 
+mental characters of a quaternion, namely. 
+
+
+
+C, A" may be regarded as the ratio of 
+
+
+
+(1) Since A" B 
+C to B; 
+
+(2) It is the product of a tensor and a directed rotor, a", e 
+
+(3) It is the sum of a scalar or number and a directed unlocated 
+line or vector, a" cos 8 -\- a" a si.-t 0; 
+
+(4) It is a quadrinomial of the form k -{- I x -\- my -\- nz, where 
+k is a pure number and the directive units x, y, z, have the 
+relations 
+
+x^ = y- = 2- = xyz = — I. 
+
+
+
+21. VECTOR ARCS. The rotor e*^ turns thru the angle a about 
+the axis A any vector in the plane perpendicular to A. The index a is 
+a vector angle whose axis is A and whose magnitude is a radians. The 
+length of the subtended arc is a a. If this circular arc be taken as a 
+vector, written a, it is understood that its angle is a, its axis A and its 
+radius a. A vector arc may take any position in its own circle, and has 
+therefore one more degree of freedom than its vector axis. 
+
+Vector arcs need not be confined to arcs of circles, but whether the 
+extension to other curves would be of any particular value remains to be 
+seen. A rough classification gives the following: 
+
+(1) Straight vectors, 
+
+(2) Plane vectors, having single curvature. 
+
+A. Conic, 
+
+a. Circular, b. Elliptic, c. Parabolic, d. Hypeibolic, 
+
+B. Spiral, etc. 
+
+(3) Solid vectors, with double curvature. 
+
+22. SUM OF CIRCULAR AND STRAIGHT VECTORS. 
+
+
+
+Let the plane of the arc a 
+meet the plane of A, B, in the 
+line CC; let C be so chosen 
+C that ^ B C is not greater than 
+90°, i. e., so that n is positive ; 
+and let a = c. 
+
+
+
+
+A GEOMETRICAL VECTOR ALGEBRA 
+
+
+
+11 
+
+
+
+Let C = mJK + ajB. 
+
+
+
+
+Then from the figure 
+
+
+
+
+h- b' — nf d^ = c^ = 
+
+
+= a-. 
+
+
+ma 
+cos AB= ^ = 
+
+
+ab 
+
+
+a' S 
+.•. /J = — . m — - , 
+
+u ' V 
+
+
+
+
+
+(^3) 
+
+
+
+•.C= y (S A + Q-^B). 
+
+
+
+Let 
+
+Then 
+
+
+
+COD = a' 
+
+
+
+,a'+« 
+
+
+
+y+a 
+
+
+
+F - D = e" ^" C - c" C = (e" ' " - e" ) C 
+
+= [ cos {a^ -\- a) -\- a sin (a' + a) — COS a^ — a sin «' ] C 
+
+= 2 sin " , sin (a^-\- " ) A- a cos (a' + " ) , C. 
+
+2 ( ' ' 2 2 * 
+
+To this B is readily added. 
+
+If B is parallel to A, C is indeterminate and any radius of the a 
+circle may be taken as C. In this case the sum is a point on a right helix 
+or screw whose axis is A. Since the addition may begin at any point of 
+the a circle, tha sum is a screw vector whose radius, pitch and direction 
+aie fixed. 
+
+23. SUM OF TWO CIRC^ULAR VECTORS. Let a, B be two cir- 
+cular vectors with a common centre O; and let C = V„,, be the intersec- 
+tion of their planes. Let CBo = /i', C Ao = a'. 
+
+
+
+Then 
+
+
+
+a = A, 
+B= B. 
+
+
+
+Ao = (e'''+'* - £■''') a c, 
+Bo= (e^'+^- e^')Ac. 
+
+
+
+Any third circular vector 
+whose position is deter- 
+mined with reference to 
+the intersection of its plane 
+with the plane of a or B, 
+may be similarly expressed 
+and the sum readily found. 
+In expanding these ex- 
+pressions it is convenient to 
+remember that 
+
+
+
+
+Fig. 6 
+
+
+
+12 
+
+
+
+A GEOMETRICAL VECTOR ALGEBRA 
+
+
+
+when C = V,^,, 
+
+then AC = V„, = S^i, A — o= B 
+
+and BC = Vi„ = A-' A — S„i, B. 
+
+When S ^ a the sum is 
+
+2a = a. 2a 
+
+which is a vector arc with angle a and radius 2a. 
+
+The locus of the sum of two equal vector arcs beginning at the same 
+point of intersection, when the planes are not identical, is an ellipse. 
+
+Also I (a — a) is a straight line. 
+
+
+
+24. SPHERICAL TRIANGLE. Assume a sphere of unit radius, 
+and upon it arcs of great circles. As an illustration of vector ti-eatment 
+let it be required to find the relation between the sines of the angles of 
+a spherical triangle. 
+
+
+
+
+Let a, B, y, be three cir- 
+cular vectors forming a 
+spherical triangle ; a, b c, 
+their vector axes; A', B'. 
+C\ the vectors from O to 
+the angular points; A, B, C, 
+the angles of the spherical 
+triangle. 
+
+
+
+Fig. 7 
+Draw A' A2 j_ O C^ 
+Then as vectors Pi} = On -\- n K^ 
+
+or A' = C' + ^ = C' cos /■] + b',,,! sin ft. 
+
+Similarly A' = B' — y = B' cos y — v^t,^ sin y. 
+
+By inspection of the figure it is evident that in any spherical triangle 
+a = v,i,i 
+cos a = Sbici> sin a == i\,i^.\ 
+
+cos A = — cos (- — A) = — Si,^. , sin A = tv.. 
+I Z>., c, z I 
+
+
+
+A' = Vu 
+
+
+
+= O' 
+
+
+
+Q'y y + O^ 
+
+
+
+A GEOMETRICAL VECTOR ALGEBRA 
+
+
+
+13 
+
+
+
+Similar equations may be written for the corresponding elements of the 
+triangle. 
+
+From the last equation, equating coefficients of x, y, z. 
+
+
+
+al = 
+
+
+
+Similarly, 
+
+
+
+b[ = - 
+
+
+
+by c, I 
+Cy a, I 
+
+
+
+I b, c, I. 
+
+fbc 
+
+
+
+I gx by 
+
+
+
+Then cos y = Saii,» 
+
+
+
+Obc 0(~ b. 
+
+
+
+^bc i'.c 
+
+
+
+and 
+
+
+
+1 1 - S^b« i/(l - SL - SL - SL + 2 S,, S,.. S„) 
+
+
+
+S/>? C y...l. ^ab ^bc "cs 
+
+The last expression is symmetrical in a, b, c. and therefore 
+
+sin a *'^ /^ sin y 
+
+sin A ~ sin B '~ sin C 
+
+25. CONIC VECTORS are expressible in teims of the radius vector 
+from the focus to each extremity of the segment of the curve. 
+
+
+
+m B 
+
+
+
+
+Let A be the axis of a conic, O it.s focus, 
+N its directrix, P the radius vector, a. b 
+the coordinates of P with reference to A 
+and B: and let p = e (a -\- m), where 
+e = is the eccentricity. 
+
+
+
+- p- (1 — c') + 2cmp — m'-. 
+
+
+
+Fio. 8 
+
+Then a ~ cp — m 
+
+b- = p^ — (f - 
+.-. P ^ A + B 
+
+^ {cp - /;?) a + /b, \p- (1 — C-) + 2cmp 
+The conic vector from Po to P is P — P<j. 
+
+P may also be expressed in terms of a, b, or 0. 
+
+Thus 
+
+
+
+m-']. 
+
+
+
+a = p cos 0, 
+b = p sin (j. 
+
+
+
+c p = a -\- m 
+
+= p cos 6 -\- m, 
+
+m 
+^ ~ c — cos ' 
+
+
+
+P = 
+
+
+
+c — cos 
+
+
+
+(a cos 6 -]- b sin 6). 
+
+
+
+14 A GEOMETRICAL VECTOR ALGEBRA 
+
+If p is a constant, c =r /?? = oo , then for the circle 
+P = p {a cos -{- b sin 0) . 
+
+Similarly in any conic 
+
+( /• „ r \ 2 ,.2 „2 , 
+
+i' 
+
+
+
+P = A + ,. r { (« + "^y - «' c' ^ 
+
+
+
+Also P = ^—^ — 5—!— — ^^ ^ a + B, 
+
+c^ — 1 
+
+but when c = 1, in the parabola, 
+P = —^ a + B. 
+
+We have then an expression for any conic vector as the difference of 
+two straight vectors, P = Po ; which may be expressed in terms of either 
+of the variables, a, b or 8. 
+
+
+
+The sum of two or more conic vectors would express approxi- 
+mately for a short distance the course of a body moving under gravita- 
+tional forces from two or more sources. Whether this method of 
+calculating would be an improvement on present methods I am not 
+prepared to say. 
+
+Multiplication of a straight vector by a vector arc involves double 
+curvature, and the locus of such a product is a convenient form by which 
+to express solid vectors (§21). Again the utility is problematical. 
+
+26. DIFF^ERENTIATION OF STRAIGHT VECTORS. Any vector, 
+A, may vary in length and in direction. Its variat'on may be expressed 
+in terms of a for length and a for direction; or it may be expressed in 
+terms of the components A^, Aj., A^. 
+
+Since the infinitesimal inciements of a vector are also vectors, it is 
+evident that by vector addition 
+
+rfA = ^, A + a,. fi< + d, A 
+
+= X da^ -\- y d ay -^ zda^, (1) 
+
+since x, y, z, are absolute constants. 
+
+Also, d A = da A -{- d, A 
+
+= a da -\- a da. (2) 
+
+It follows from (1) that the differential of a vector is the sum of the 
+differentials of its components, and hence that differentiation is distribu- 
+tive over vector terms. 
+
+
+
+A GEOMETRICAL VECTOR ALGEBRA 15 
+
+It follows from (2) that the ordinary rule for differentiation of a 
+product holds true for any unit vector and its tensor, and hence for any 
+product of a tensor and a vector. 
+
+27. To find the differential coefficient of a vector product, A"B. 
+
+A" B = a"' (Sa vers (^ -{- a B cos H + V sin H). 
+
+Differentiating both sides of the equation with ivspect to 0, =^ n~ , 
+
+d 2 
+
+^ A" B = _ A B.loga + a"'(Sa sin I) — a B sin N -^ V cos 8) 
+
+'2 
+= A"B loga + o" ' (cos + a sin H) V, 
+
+since, by multiplication, Sa — oB=raV- 
+
+The last term of the differential coefficient may also be written 
+o"' e" V. It is a tensor and rotor product of V (the vector normal 
+of A and B), whose rotation is about A. e° V expresses the rotation of 
+V in the plane perpendicular to A. o" ' e** V traces a spiial in this 
+plane, and as a vector it gives at any point the direction and rate of 
+motion in this plane made by the point B, supplementary to the increase 
+in the length of B. 
+
+2 
+The term _ A" B loga is a multiple ot the vectoi- product, and for 
+
+any given value of n it expresses the rate and direction of the increase, 
+in length only, of that pioduct. 
+
+The sum of the two terms gives the rate and direction of the motion 
+of the point B for unit increase in H. It is the vector tangent to the 
+
+curve traced by A"B, namely, the curve /a"B. 
+
+Example. — Find the tangent where the flat spiral (ox)", by cuts 
+the Y axis. The tangent is 
+
+. d 
+J ^ ^{axr by, 
+
+P 2 2 
+
+= a" b l{_ log a cos — sin ft) y -f- ( _ log a. sin H — cos Ij) z\ 
+
+At the starting .point fj = o, and 
+
+2 
+To = b {_ loga.y -^r x). 
+
+When /2 = 2, (y = -, and 
+T, ^ - a- T,. . 
+
+
+
+16 A GEOMETRICAL^ VECTOR ALGEBRA 
+
+When 0=4. ^ ^ 2;r, and 
+
+This vector tangent makes at all times a constant angle with its radius, 
+and its length gives the velocity of the generating point when the 
+angular velocity is unity. 
+
+28. CURVATURE. If / be the length of a curve, and T the vector 
+
+(iT 
+tangent, the curvature K is —7 , and the radius of curvature is 
+
+a I 
+
+_ - K 
+
+R — ^^2 . 
+
+
+
+29. LINEAR LOCI are loci having only one degree of freedom; 
+lines or discrete points. A few examples are given: 
+
+
+
+
+
+
++ B is any part of the straight line drawn from the 
+point B in the direction A. 
+
+"B + C. when A -L B, is a circle with centre C, radius 
+b, and plane perpendicular to a. 
+
+
+
+^l (A cos -\- B sin t^) ; C is an ellipse pai'allel to the 
+A B plane. 
+
+_^/(A"B + oC) includes a variety of curves. 
+
+If A -L B, C II A, and a = 1, the locus is a helix. 
+If C i A the locus varies from a circle (when c = o) 
+to a straight line (when c = co), passing thru the cycloid. 
+In other positions of C the helix is acute angled. When 
+a^> 1 the curves are expanding and when a 1 diminishing. 
+
+
+
+30. EXAMPLES OF SURFACE LOCI. 
+
+77' 
+
+„t„t(A r B) + C is a parallelogram whose adjacent sides 
+A, B, start at the point C. Its diagonals are A :b B. 
+Its area is a 6 sin A B = f . (SlO). 
+
+
+
+A GEOMETRICAL VECTOR ALGEBRA 17 
+
+
+
+JJb"a 
+
+
+
+B is a closed surface, spherical if a j b, with 
+radius b. 
+
+,1 „l o" B is the conical surface traced by B as it is turned 
+about A. 
+
+
+
+./:/ 
+
+
+
+(A+ (1 — o) B) is the triangle OAB. 
+
+
+
+31. EXAMPLES OF SOLID LOCL 
+
+/// (A + B + C) + D is any parallelepiped. 
+
+Its diagonals are A + B -f C. A + B — C. A — B C, 
+
+— A + B + C. Its volume is | o, b,. c, | . If P -- V,^ 
+and Q =^ V^^, the dihedial angle, a, over the edge A is 
+found from the equation S,„, = pg cos a. 
+
+„/„/„/a"^'"A is a shell, spherical if A B. 
+
+7' \ 7' 7' ) 
+
+<,/ a" ( „c ^'" e t C + R , is a hollow annulus 
+
+if B C, R ' C. A R, A B. 
+
+32. THE REGION COMMON to two loci is found by equating the 
+coafficients of x, y, z, in the expressions for the loci. If these equations 
+are consistent, giving i"eal values for the variables, the limits thus found 
+are inserted in either of the loci to give the required locus of intersection. 
+
+Example \. — Find the region common to the straight line 
+
+„l n X -\- hy, and the curve 
+
+„/{a X + (2x + y) sin a j. 
+
+Equating coefficients, 
+
+n = a -\- 2 sin a 
+
+i = sin a. 
+Whence n = a -\- 1 =^ arcsin I -\- 1. 
+Inserting these values, both loci become 
+
+Jih y + X arcsin h) 
+which is a row of discrete points parallel to :ir. 
+
+
+
+18 A GEOMETRICAL VECTOR ALGEBRA 
+
+Example 2.— Find what part of the helix 
+
+/" 7" mr nir ^ 
+
+(X" y -\- 3/? X) ^ X (3 /JX +y cos — [- z sin — ) 
+
+is within the figure 
+
+nr. , . 7/7' '"^ '"'^. 
+
+.,( d J (y"'c z + bx — y}^^ J J „l ,x (csin-Y- -{-b)—y+zccos -^ \- 
+Equating coefficients of x, y, z, 
+
+(1) 3/2 = c sin ~ + b 
+
+(2) cos ^ = - 1, .-. sin — = 0, and n =2, 6, 10 
+
+(3) c COS — — sin — = 0, 
+
+2 2 
+
+If c = 0, 3n = A. 
+
+It COS — - = U, s^n — - =^ ± 1, and since c is positive Sn ~ b -\- c. 
+
+Inserting these values in the locus of the helix we get for the 
+intersection a row of points 
+
+ISnx — y, where n has the values 
+2, 6, 10 up to -^ ■ 
+
+Example 3. — Find the intersection of the plane 
+
+II {mx -\- nz) -]- Sx 
+with the solid 
+
+o/ „IJ X" («•« + by) ^^ot oU \ax -\- by cos -| hzsinO] ■ 
+
+Equating coefficients of x, y, z, 
+
+(1) /n + 3 = o, or /n = o — 3. 
+
+(2) b cos B = 0, .-. A = 0, or sin 6 ^ ± I. 
+
+(3) n = b sin 0, = or ± b. 
+.-. n = ± b. 
+
+Substituting in the locus of the plane we get for the inter- 
+section the parallelogram 
+
+
+
+o/„/(o 
+
+
+
+bz). 
+
+
+
+A GEOMETRICAL VECTOR ALGEBRA 19 
+
+Example 4. — Find the locus of the intersection of the cube 
+JJjla^x^ Qy y — a^ z) 
+with a plane which cuts its diagonal 
+A = X + y 4- z perpendicularly. 
+
+Let B = X — y 
+
+be one vector in the perpendicular plane, and 
+
+C = V.b =x + y -2z 
+the other. The plane is 
+
+11(1 B mC+ nA) 
+
+where n is an arbitrary constant expressing the fractional 
+distance from O to the point where the diagonal is cut. 
+
+Equate coefficients of x, y, z, in the two loci, 
+a^ = I ' m -\- n 
+Oy = — / -\- m -\- n 
+Oj, = — 2 m ' n. 
+
+Therefore / = — g— 
+
+Ox + Oy — 2 o, 
+m= g 
+
+3 /J = a^t 4 Oy + Oj. 
+
+If /2 = the plane goes thru O. Since a^. a^, o^, are all positive 
+and the sum zero, each of them is zero, and the locus of 
+intersection is the point O. 
+
+If n = 1 the point of intersection is A. 
+
+If n = J, so that Ox ; Oy + Oj = 1, while each varies between 
+and 1 subject to this condition, the locus is an equilateral 
+triangle whose corners are found by giving to a^, a^, a,,, 
+separately the maximum value, 1, in the expanded expres- 
+sion for the plane 
+
+If n = § the locus is a similar' triangle. 
+If /? = I the locus a I'egular hexagon. 
+
+
+
+20 A GEOMETRICAL VECTOR ALGEBRA 
+
+33. PROJECTIONS. To express any vector K in terms of three non- 
+coplanar vectors A. B, C, write 
+
+/A H /n B + « C = K 
+.•. i a^ + m b^ -\- nC:^ = k^ 
+
+I Qy ^ m by + n Cy = ky 
+
+I a^ -\- m b:^ + n c^ = k^ 
+
+_ I k^ by c, I _ I k^ Cy a, | _ | Ar. o„ b, I 
+
+
+
+Ox byC,\ ' ~ \ a^byC,\ ' " - \a,byC,\ • 
+
+If we now write /? = 0, I Ai, -{- m B \& the projection of K, made 
+parallel to C, upon the plane of A. B. 
+
+If A and B only are given, and the projection is desired of K per- 
+pendicularly upon A, B, take C = Vai, = \ a^ by z \ , and proceed as before. 
+
+To project K in the direction of C upon a plane perpendicular to C, 
+take any vector A, -L C, so that Sac = 0, 
+as, A ^ CyX — c^ y 
+
+and a second vector B, = Vacr 
+
+
+
+B = 
+
+
+
+Cx Cy C.^ 
+Cy-Cx 
+
+X y X 
+
+
+
+Then express K in terms of A, B, C, as before. 
+
+The most general form of a locus is /// K + M, which is projected 
+in the same way. 
+
+Example.— Project upon the YZ plane and parallel to D the helix 
+
+I B ^^^ J {x"b y 4- an x) 
+
+= J [b (y cos d -\- z sin 6) -\- on x } * 
+Let B = /y + /7?2r ; rD. 
+Equating the coefficients of x, y, z, 
+
+r d^ ^^ a n 
+
+I -{- rdy= b cos 6 
+
+m -\- r d^ ^^ b sin 0, 
+
+.-. B = y j A cos 6 — a n -. ] -\- z \b sin ~ on-, \ 
+the locus of which is the required projection. 
+
+
+
+A GEOMETRICAL VECTOR ALGEBRA 21 
+
+34. PLA.NE ALGEBRA.. Every vector in the XY plane is of the 
+
+form A = Ox ■* + «> Y 
+
+= o^ X -\- Gy zx 
+= (Ox + z Oy)x. 
+Since x is a part of every vector expression of this form, it may be 
+omitted. The remaining form, a^ -f- •* Oy. is a complex number. Since z'^ 
+as a rotor is equivalent to -1, we may write this tensor-rotor in the 
+common form o -|- ib (whare /- =-1), whose p.-operties are well known. 
+
+Again, any vector in the X Y plane may be expressed as a z-product, 
+thus, A = a z" X 
+
+= a (cos 6 -\- z sin 6) x 
+
+= a c'^ X. 
+Omitting x as before we have left the other two forms of the com- 
+plex number. 
+
+Vector multiplication in the XY plane with any other rotor than z 
+gives in general imaginary products, i.e., products lying outside of that 
+plane. 
+
+FOUR-SPACE ALGEBRA 
+
+35. In four-space there are, by definition, four mutually perpen- 
+dicular axes, X, Y, Z, U. These are so selected that they multiply in cir- 
+cular order, as in 3-space. Each vector is now fully defined by four 
+compansnts. Vectors are added and subtracted as in 3-space. 
+
+As in §3 it may be shown that 
+
+Sab ^= Ox 6x + Oy Ay + Oz ^z + (7^, A„ = O Z> COS A 3, 
+
+where S„b is, as before, the sum of the a b products. 
+Evidently also when S^b = 0, A '_ B. 
+
+36. MULTIPLICATION in 4-space is defined as rotation about the 
+plane* of the multiplying vectors, thru a right angle in the positive direc- 
+tion. The planes of rotation are wholly + perpendicular to the axial plane. 
+
+*Rotation is essentially plane motion. In a 2-flat the axis of rotation 
+is a point. In a 3-flat the axis is a line. In a 4-flat the axis is a plane. 
+
+tit is evident from §35, that in 4-space absolutely perpendicular planes 
+exist. For A = a^ ■* + Oy y is any vector in the X Y plane, and 
+B= b^z + b^u is any vector in the ZU plane. Since Sab= 0, A -i- B. 
+That is to say, every vector in the XY plane is perpendicular to every 
+vector in the Z U plane. 
+
+
+
+22 
+
+
+
+A GEOMETRICAL VECTOR ALGEBRA 
+
+
+
+Multiplication of C by AB, is written ABC, and is defined as 
+
+(1) Rotation of G thru 90" in the positive direction about the 
+
+plane A B, and 
+
+(2) Simultaneous extension to the length abc. 
+
+By definition, xyz = u, yzu = x, zux = y, uxy = z. 
+
+Re Timbering that the plane of rotation is perpendicular to the axial 
+plane it becomes evident that 
+
+
+
+xyu = z, yzx = u, zuy = x, uxz = y 
+
+y xyz = u, yzu^^ x, zux ^ y, uxy = z 
+
+lcyu = z, yzx = u, zuy = x, uxz=^y 
+
+
+
+Fig. 9 
+
+Coplanar vectors are unchanged in position by 4-space multiplication, 
+because the whole axial plane is unmoved, 
+
+xyx = X 
+
+xy (a^x -^r Qy y) = a^x -\- a^ y. 
+
+
+
+37. MULTIPLICATION BY PERPENDICULAR VECTORS. 
+
+Let A -L B -L C, and let ABC = W- 
+
+Then S,^ = Si,w = S,„ = 
+
+and iv^ =^ iv'^ -\- w~ -\- wl + wl = ci^bi^ c^. 
+
+Solving for w^, iVy, w^, w^, and collecting. 
+
+
+
+
+Wab 
+
+
+
+Ox 
+
+
+Qy 
+
+
+Oz 
+
+
+Ou 
+
+
+b.. 
+
+
+by 
+
+
+b. 
+
+
+bn 
+
+
+Cx 
+
+
+Cy 
+
+
+Ct. 
+
+
+Cu 
+
+
+X 
+
+
+y 
+
+
+z 
+
+
+u 
+
+
+
+Ox by c,,u \ . 
+
+
+
+Also 
+
+
+
+w'^^\ayb^c^\''-\-\ Wx Az c J " + Ox 6y c J - + I Ox by c. 
+
+
+
+Saa S,, 
+
+
+Sac 
+
+
+Sba Sbb 
+
+
+She 
+
+
+Sea Seb 
+
+
+Sec 
+
+
+
+O" bi^ &. 
+
+
+
+A GEOMETRICAL VECTOR ALGEBRA 
+
+
+
+23 
+
+
+
+33. C is coplanar with A. B, when 
+
+C = m A - nB. 
+
+Wiiting the four equations of coordinates, and eliminating m and n, we 
+get the coplanar equations 
+
+\ a„ by c^ \ = 
+
+I Oy 6z c„ I = 0. 
+
+39. To find the perpendicular N- from the point B to the vector A. 
+Q Let Q B be the positive direction of Me- 
+
+
+
+Then ry = O Q = A cos A B = -" 
+
+
+
+
+<^ = -aZ A. 
+
+
+
+n- = b- — q^ =- 
+
+
+
+Saa 
+
+A 
+
+
+B 
+
+
+^ a\ 
+
+
+
+
+
+
+Sbb 
+
+
+^ 0^ = 
+
+
+y2 
+a- 
+
+
+
+These forms of N-, ri~, Q, q, are identical in space of four, three and 
+two dimensions, and evidently for space of all dimensions. 
+In a 2-flat 
+
+I Ox Oy I 
+
+f^ = \ h A H- a. 
+
+Ox 0„ 
+
+
+
+40. To find the perpendicular N.j from C to the A B plane. 
+
+Let Q C be the positive direction of Ns- 
+Draw Q E _L A. Q F j_ B. join C F, C E. 
+
+a ~ a 
+
+: 830 = S., 
+
+
+
+
+Then OE 
+
+
+
+and F = -7- = -jr . 
+b b 
+
+A •'■ '5i,,| -= bbc 
+
+Since A, B, Q3, are coplanar 
+
+I Ox Ay q. ! = 
+
+I o, Z>, (7J = 
+
+
+
+(1) 
+
+(2) 
+
+(3) 
+
+(4). 
+
+
+
+24 
+
+
+
+A GEOMETRICAL VECTOR ALGEBRA 
+
+
+
+Solving for the coordinates of Q:i, and collecting terms, 
+
+
+
+where 
+Then 
+
+
+
+Q3 
+
+
+
+(b- Sao — Sab S,,c) ^ + (a- Sbc — Sab S^c ) — 2 
+
+--^ Qi + Qy + qI ^ ql 
+
+= (a^ SL + F- SL - 2 Sab Sa,. SbJ l-,, 
+
+
+
+0"- = a'-b" ~Sl^ 
+
+
+
+N3 = C - Q3 
+
+
+
+Saa 
+
+
+Sab 
+
+
+Sac 
+
+
+
+
+
+
+Sba 
+
+
+Sbb 
+
+
+Sbe 
+
+
+ISaa 
+■ iSba 
+
+
+Sab 
+Sbb 
+
+
+A 
+
+
+B 
+
+
+C 
+
+
+
+
+
+
+Saa 
+
+
+^5ab 
+
+
+Sao 
+
+
+Saa 
+Sba 
+
+
+Sab 
+
+Sbb 
+
+
+Sba 
+
+
+Sbb 
+
+
+Sbi- 
+
+
+Sea 
+
+
+^cb 
+
+
+Sec 
+
+
+
+w^ 
+
+v' 
+
+
+
+These forms are identical for 3-space, and apparently for all space 
+above it. 
+
+
+
+In 3-space also 
+
+
+
+Ox 6„ c. 
+
+
+
+41. To find the normal N4, from D to the 3-flat of A, B.C. 
+
+Let Q D be the positive direction of Nj- Join 
+O Q. Drop perpendiculars from Q4 on A,B,C, 
+and join each point of intersection with D. 
+
+
+
+Then it is evident as in 
+§40 that 
+
+^aq ^ '^ad '^) 
+
+Sbq = Sbd ('i) 
+
+Scq= S,d (3). 
+
+Since A. B, C. Q4. are 
+
+all in the same 3-flat and 
+therefore all perpen- 
+dicular to N4 
+
+San=Sb„=S,n-S,„=0. 
+
+Eliminating the n's we 
+
+get the cosolid equat'on 
+
+I a^byC^q^ I =^0...(4;. 
+
+
+
+
+N4V C 
+
+
+
+A GEOMETRICAL VECTOR ALGEBRA 
+
+
+
+25 
+
+
+
+Solving for q^ etc. and collecting terms 
+Q4 = { S,d [A ( SL - b' c^) + B (c^' Sab - S,, Sbc) - C ( A^ S,e - 8,^ S,e) ] 
+
++ Sed [C (S!b - a- If) + A ib' S., - Sbc S^J + B (a^ Sbc - S,. S.J ] } ^ zi^^ 
+
+
+
+Therefore 
+N4= D- Q4 
+
+
+
+•^aa ^ab '^ac >5ad 
+
+k^ba Sbb Obc Obd 
+
+b,.a Ocb Sec Sjd 
+
+A B C D 
+
+
+
+Saa 
+
+
+Sab 
+
+
+Sac 
+
+
+Sba 
+
+
+Sbb 
+
+
+k5bc 
+
+
+Sea 
+
+
+Scb 
+
+
+s„ 
+
+
+
+Saa ^bb S^e Jj 
+I S,a S,,b S,e 
+
+
+
+Ox by c^ d^ 
+
+IV- 
+
+
+
+42. RELATION OF N4 TO THE RECTOR W. Since N4 and W 
+are each perpendicular to the 3-flat of A, B, C. they differ only in their 
+tensors, 
+
+tIa I o, Z>y c, </„ I 
+
+Similarly, in 3-space 
+
+
+
+Hence 
+
+
+
+N4 = 
+
+
+
+W. 
+
+
+
+Ns = - V = 
+
+
+
+O, by Cj 
+
+If 
+
+
+
+And in 2-space 
+N2 
+
+
+
+when 
+
+
+
+F^ 
+
+
+
+la, by_i 
+
+is the perpendicular to A. 
+
+
+
+r 
+
+Ox Qy 
+
+X y 
+
+
+
+The forms for N.i, Nj. nfi, n?,, may be obtained by suppressing rows 
+and colunms in the determinant foims of Ni, n'i. It is evident that we 
+have here a corresjondence between the geometric space-form for a per- 
+pendicular and the algebraic space-form or matrix, which is true for all 
+space. 
+
+43. To find the product ABC when n is real. 
+
+^ Let CPK be the circle of rotation 
+
+of the point C, and let Q be its centre 
+in the A B plane. 
+
+Join QO, QC, QP. 
+
+Let O P be the position of OC after 
+rotation, so that O P =ah C. 
+
+Draw PD l QC, DM||CO. 
+
+
+
+
+The angle CQP ^ 6* 
+
+
+
+2 
+
+
+
+Fig. 13 
+
+
+
+26 A GEOMETRICAL VECTOR ALGEBRA 
+
+Then since P D, being in the plane of rotation, is perpendicular to 
+
+the AB plane, and also to QC; PD is perpendicular to the 3-flat of 
+
+A, B, C, and is therefore parallel to W. 
+
+CD 
+M = Q QQ = q vers 
+
+QD 
+MD = OC Qj. = c cos 
+
+DP =^ FQ sin e ^ n^i sin -^ — sin H. 
+As vectors 
+
+OP=OM + MD + DP, 
+
+n W 
+
+.-. a l> C = Qa vers 6* + C cos (^ + - sin d 
+
+n vers if 
+
+.: A B C = 0" b" [1 A ib^ S^ - S,h S,,,) + Bid' S,, - S,, S.J | — ^,— 
+
+W 
+
+
+
++ Cco6-f^+X^ ^..^^-j^ 
+
+
+
+44. If C is perpendicular to A and B. then 
+
+" VV 
+
+A B C =^ o" A" I ^ ^'"-^ ^ + T ^'" ^ ' ' 
+
+W 
+
+and ab C = — . 
+
+.-. A B C = o" A" ( cr)s 6 + alb sin H ) C 
+
+The rotor e" resembles the rotor e found in 3-space multiplica- 
+tion. It is evident that similar rotors (quaternions) will be found in all 
+higher space forms. 
+
+45. The intersections of loci are found as in S32. 
+Example L — Find the intersection of the 3-flat 
+
+/// (ax J^by + CZ) 
+with the helix 
+
+/ I xy (jr -f- y + i) -f nx J :r:r [(x ■ y -\- z cos 6 -\- u sin t) + nx). 
+
+Equating coefficients of x, y, z, u, 
+a ^ n + 1 
+b ^ 1 
+c = cos 
+= sin 0. 
+.-. c = ± 1 
+and n = 0, rt 2, ± 4, etc. 
+
+
+
+A GEOMETRICAL VECTOR ALGEBRA 27 
+
+The intersection is 
+
+representing two rows of points parallel to X. 
+
+Example 2.— Find the intersection of the plane Hiax i by) with 
+the solid cylinder 
+
+JJol [^ C + m (x + u) ) :^= lll[c^x - Cyy- (c, cos 6 — c, sin ti)z 
+
++ (Cu cos B ~r c^si'n 6) m]. 
+Equating coefficients of x, y, 
+
+a — c^ -\- m 
+
+b = Cy, 
+
+and the plane locus becomes the rectangle 
+
+46. PROJECTIONS. To express any vector K in terms of any four 
+vectors A, B, C, D, not in one 3-flat, write 
+
+/A + mB + nC /D -= K. 
+Then la^ -\- mb^ - nc\ -\- rd^ — k^ 
+lOy -]- mby -{- nCy -\- rdy -- k, 
+la^ -\- mbj. ■ nc^ -\- rd^ =: k^, 
+la^-\- mb^ ■ nc^ -\- rd^ — ka 
+
+Ox ky Cj (/„ I 
+
+
+
+/= • / '7 . m = 
+
+
+
+\ k^ 
+
+
+by 
+
+
+Cz 
+
+
+rful 
+
+
+1 Ox 
+
+
+by 
+
+
+Cj 
+
+
+<\ 
+
+
+1 Ox 
+
+
+by 
+
+
+k. 
+
+
+rful 
+
+
+
+I Ox by Cj, o'u 
+
+
+
+I Ox by c^ ATu 
+
+Ox Ay Tj <^U I ' ~ I Ox by Cj (/„ 
+
+
+
+Writing either /, m, n or r equal to zero the remaining terms of K 
+are the projection of K made parallel to the vanishing vector and upon 
+the 3-fl it of the remaining vectors. To project K normally upon the 3-flat 
+of A, B, C, write D = W;ibc, then make r = 0. 
+
+The sum of any two terms of K is the projection of K ujjon their 
+plane, made parallel to the plane of the other two vectors. 
+
+Loci are projected in the same way. 
+
+
+
+28 A GEOMETRICAL VECTOR ALGEBRA 
+
+47. As an illustration of the method of the last section we may find 
+the principal orthogonal projections* of the regular 8-cubed tessaract 
+whose edge is unity, 
+
+
+
+/;/:./;/k. 
+
+
+
+upon the 3-flats about it. 
+
+
+
+(1) Parallel to x, on the 3-flat of y, z, u, the projection is 
+obtained by writing k^ = 0, giving the cube 
+
+
+
+w\ 
+
+
+
+(k,y-^Kz + k,u). 
+
+(2) Parallel to x + y. Let x + y = D. 
+
+To get three other rectangular vectors we may take 
+
+A = z 
+
+B = w 
+
+C = Wabd = y — X. 
+
+Then I — k,,, m — k^, n — -^—^ — ^ • 
+Writing r = the projection becomes 
+
+JJJ J] k.A + k^Bi^ "-"-^ C j . 
+And a = 1, 6 = 1, c = i 2. 
+
+To express this locus in geometrical terms we note first that since 
+it contains three vectors, not coplanar, with independent 
+variable coefficients, it is a 3-space solid ; and in the second 
+place that the original axes, z, u, which are perpendicular 
+to the line of projection, remain unchanged. The axes x, y, are 
+each foreshortened in the ratio of i 2 : 1. Projecting x and 
+y by the same plan as for K we get for the projections 
+X' = iC 
+
+making the total distance ; 2 along C. 
+
+Consider next the variables in the locus, k^ and k^ are entirely 
+
+independent, with limits from to 1, and [ [ (A", A ^ k^B) 
+is a square in the A B plane. The solid is a right square 
+
+prism whose extension along C is given by the last term 
+
+ky - k, 
+
+— 2 C of the locus, k^ and k^ vary independently fi'om 
+
+*For a purely geometric investigation of these projections see the 
+American Journal of Mathematics, Volume XV, No. 2, pages 179-189. 
+
+
+
+A GEOMETRICAL VECTOR ALCEBRA 
+
+
+
+2Q 
+
+
+
+(3) 
+
+
+
+to 1. The lower limit of the term occurs when k^ = 0, k^ = 1, 
+namely, -J C; and the upper limit is ^ C. Since c = ^ 2, the 
+length of the prism is ^ 2 along C. 
+
+Parallel to x + y - z, (= D). 
+Take for the other rectangular axes 
+
+A = u 
+
+B = jf — y 
+
+C = Wabd -= X - y — 2z. 
+
+
+
+Then I = k^, m = 
+
+
+
+k, - k. 
+
+
+
+k. + ky 
+
+
+
+2 k, 
+
+
+
+Put r = ; the projection is 
+
+
+
+nii\K^ 
+
+
+
++ 
+
+
+
+k,-\-ky-2k. 
+
+
+
+> "" " ' 2 
+
+where a = 1, 6 = ^ 2, c = ^ 6. 
+
+
+
+The figure is again a 3-solid ; the axis u, perpendicular to D, remain- 
+ing unchanged. Projecting the other three axes we get 
+
+x' = J B + ^ C 
+
+y> = - J B + 1 C 
+
+*' = - i C. 
+
+The length of each of these is -^. This length may be found directly 
+by the equation 
+
+•3xd „ 
+
+
+
+sin - X D = 1 — cos - x D = 1 
+
+
+
+The variable k^ is independent. The figure is therefore a right prism 
+of unit length along A. To find the prism base, or section in 
+the BC plane, draw the axes kB. hC and plot the figure. 
+
+
+
+
+First, let k^ = ky = 0, while Ar, 
+varies from to 1, tracing the 
+line along C from — J to O, the 
+line aO. Next let ky = i; the 
+locus of k^is then the line be from 
+
+B C . _B C 
+
+~ 2 6 ^° 2^6- 
+
+Intermediate values of ky fill out 
+the parallelogram ac. 
+
+
+
+30 A GiiOMETRICAL VECTOR ALGEBRA 
+
+Next let k^— 1, and proceed as before, obtaining the parallelogram dC, 
+
+B C B O 
+
+whose limiting lines are de from o "" fi *'^ ^ ^ ^ ' ^^^ ^^ 
+
+from O to IT . 
+
+Intermediate values of k^ give similar parallelograms commencing at 
+every point along a d and covering the regular hexagon ace. 
+
+The whole projection is a right hexagonal prism. The projected axes 
+x\ y\ z\ are Oc, Oc, Oa. 
+
+(4) Parallel to x + y + ar + u, (= D). 
+Take for the other rectangular axes 
+A = X — y 
+B = « — u 
+C = ^ Wabd = x + y — i— t/. 
+
+/(-, - A-, k,- k, k,^k,-k,- k, 
+Ihen / = n — '- , m = ^ , n = — 7 , 
+
+and the locus of the projection is 
+
+7' 7' 7' V, ^x - k, k, - k, k, ' k,. -k, - /r, 
+
+where a = b = ^ 2, c" = 2. 
+
+Projecting the axes x, y, z,u, we get 
+
+*' = i A + i C 
+. yi = - JA + iC 
+
+M'=-iB-iC 
+
+. . 1 3 
+
+and the length of each projected axis is -h" . 
+
+To obtain the geometric form of the projection, give to all the variables 
+the value zero, then to each one separately give all values up to 
+unity. This gives four lines from O, identical with the projected 
+axes. With three of these lines as adjacent edges form a 
+parallelopiped, and form three more parallelopipeds with the three 
+other possible groups of the four lines. The sum of these four 
+solids, a rhombic dodekahedron, is the pi ejection required. 
+
+
+
+:'iii^^. 
+
+
+
+14 DAY USE 
+
+RETURN TO DESK FROM WHICH BORROWED 
+
+LOAN DEPT. 
+
+This book is due on the last date stamped below, or 
+
+on the date to which renewed. 
+
+Renewed books are subject to immediate recall. 
+
+
+
+i!iii^" 
+
+
+
+Sneer 
+
+
+
+kH?"' 
+
+
+
+6i DTL 
+
+
+
+MG-^ 
+
+
+
+im 
+
+
+
+OCTl^l -SGI 
+
+
+
+40ct'6lJMl 
+
+
+
+HEC'P LB 
+
+
+
+AJul^Q^Q 
+
+
+
+Vr 
+
+
+
+-^sQ^ 
+
+
+
+^EPir 
+
+
+
+Wr 
+
+
+
+/30rt'6IDM 
+
+
+
+5Ul5 
+
+
+
+i Vi-'L-.X^ 
+
+
+
+23^u^ 
+
+
+
+'62G^y 
+
+
+
+SEP 29 1961 
+
+
+
+150ct'6lLU 
+
+
+
+REC: 
+
+
+
+MOV ^ 
+
+
+
+«.-i 
+
+
+
+0G1 '^1 
+
+
+
+.<<^^'^. \.. U3- 
+
+
+
+LD 21A-50r?i-4 
+(A1724sl0)47l 
+
+
+
+2^Ni PEfi^SPW^* 
+
+
+
+LD 21A-60)H-10,'65 
+(F7763sl0)476B 
+
+
+
+General Library 
+
+University of California 
+
+Berkeley 
+
+
+
+eAYLORD 
+
+BROS, INC. 
+
+Manufacturen 
+
+Syracuse, N. Y. 
+Stockton, Calif. 
+
+
+
+U C.BERKELEY UBRARIES 
+
+
+
+
+CDbl3M'lb33 
+
+
+
+^^/gs'S 
+
+
+
+*-i*- 
+
+
+
+■XG\ 
+H3 
+
+
+
+THE UNIVERSITY OF CAUFORNIA UBRARY 
+
+
+

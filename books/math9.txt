@@ -1,0 +1,1128 @@
+COPY NO. 
+
+
+
+
+NEW YORK UNIVERSnrY 
+
+WSmUTE OF M ATI lEMATICAL SCIENCES 
+
+j A..W<» «t y PlijLC) i 4ew YdilT j; n V. 
+
+NEW YORK UNIVERSITY 
+INSTITUTE OF 
+
+
+
+IMM-NYU 206 
+MARCH 1954 
+
+
+
+4 \:^Giiiii^-ton Place 
+
+
+
+N 64 8 136 9 
+
+MATHEMATICAL SCIENCES ^?^-efe /f^ 
+
+
+
+<^-J2 
+
+
+
+r 
+
+
+
+3 
+
+
+
+Methods for Matrix Inversion and for the 
+
+
+
+Solution of Simultaneous Linear 
+Algebraic Equations 
+
+
+
+NEW YORK UNIVERSFTY 
+
+COUkANT iNSraUTt - LIBSARV 
+
+4 Washington Place, New York 3, N. Y, 
+
+
+
+J. H. CURTISS 
+
+
+
+PREFACE AND SUMMARY OF THE TEXT 
+
+
+
+TECHNICAL REPORT I 
+
+
+
+CONTRACTS NOS. DA-30-069-ORD-1257 
+
+AND 
+
+N6ori-201, TASK ORDER NO. 1 
+
+PREPARED UNDER THE SPONSORSHIP OF 
+
+ARMY OFFICE OF ORDNANCE RESEARCH 
+
+AND 
+
+OFFICE OF NAVAL RESEARCH 
+
+
+
+
+
+
+
+IM-NYU 206*^ 
+March 19514- 
+
+N64 81369 
+
+i^ETHODS FOR MATRIX INVERSION C^^J^- /Y<^-'^Ui_^ 
+
+
+
+AND FOR THE SOLUTION OF SIMULTANEOUS LINEAR ALGEBRAIC EQUATIOKSj^t' 
+
+by 
+J. H. Curt; 
+
+
+
+,13S -rri^^ iffi ^3f^ 
+
+
+
+Preface and summary of the text. 
+
+
+
+Note: The purpose of this technical report is to provide 
+
+information about a longer work now in rough draft form, 
+with the idea of determining processing requirements and 
+obtaining suggestions for improvement. 
+
+
+
+(contract^i^osj DA-30-069-0RD-1257 j 
+(^ tyrC^*-^ N6ori-20l) Task Order No. 1 
+
+y^ Technical Report No. 1 
+
+
+
+This report represents i-esults obtained at the Institute 
+of Mathematical Sciences, New York University, under the sponsor- 
+ship of the Army Office of Ordnance Research and the Office of 
+I>iaval Research. 
+
+New York, 195i| 
+
+NEW YORK UNIVERSITY 
+
+INSTITUTE OF MATHEMATICAL SCIENCES 
+
+LIBRAIIY 
+
+25 Wavcrly PLce, New York 3, N. Y. 
+
+
+
+PREFACE . 
+
+Professor J. J. Schoenberg once remarked in a lecture at the 
+Institute for Numerical ■"■nalysls in Los Angeles that there were 
+two kinds of problems studied in the theory of numerical analysis: 
+problems which do exist, and problems which do not exist. He was 
+of course referring to the pure mathematician's criterion as to 
+the existence of a problem. The problems wh;".oh c'^o not exist, from 
+this viewpoint, are those for which theorems are available which 
+guarantee solutions under certain circumstances. The theorems may 
+not give any clue as to how to find solutions in practice. The 
+class of problem which do exist is simply defined to be the com- 
+plement of the class which do not, with respect to the field of 
+numerical analysis. 
+
+The inversion of matrices and the solution of systems of 
+linear algebraic equations are problems which most emphatically do 
+not exist, in the above sense. Perhaps the linear equation problem 
+ceased to exist more than three thousand years ago, because one 
+mathematical historian'*^ has traced Cramer's rule in a simple form 
+back to the Chinese of 1100 B.C. Certainly after Cramer ( 170lj.-1752) , 
+there could be no coubt about the matter. 
+
+Cramer's rule not only furnishes an existence theorem; it 
+furnishes a formula for finding solutions numerically, yet the 
+
+David Eugene Smith, History of Mathematics , Boston 1923-25. 
+Vol. 2, p. 14.33. 
+
+
+
+2. 
+
+formula is s? -cc'; useless in practice unless the order of the 
+matrix of the problem is very low, Forsythe" has recently esti- 
+mated that to solve 26 equations in 26 unknovins by the use of 
+
+Cramer's rule and by the definition of determinant would take a 
+
+17 
+modern large-scale electronic computing machine some 10 years. 
+
+By the most efficient methods, the solution could be reached on 
+tlie sane machine in about 3 jeconds of computing time. 
+
+It Is not surprising, therefore, that an enormous literature 
+concerned with the development of methods of matrix inversion and 
+solving linear equations has come into being. During just the 
+last fifty years, many hundreds of research papers have appeared 
+on the subject. There were numerous contributions in the nineteenth 
+century, also. Good surveys of the literature are now available'*''. 
+Y'it it v.'ould seen that there is as yet no exposition in print in 
+the English language which systematically and carefully covers 
+the entire field, both from the point of view of practice and 
+from that of theory. The nearest apprcach will be found in the 
+interesting new book by A. S, Householder entitled Principles of 
+Numer ical Analys is"'"'". But this seems to be written for the 
+teacher and researcher rather than for the novice and the labora- 
+tory vorker. It is entirely theoretical and contains very few 
+hints as to how to apply the theory. 
+
+
+
+Forsythe, G. E., "Solving Linear Equations Can be Interesting." 
+Bull. An Math. Soc, Vol. 59 (1953) PP - 299-329. 
+
+See e.g, Fcrsytho, loc . cit . 
+■''■^■^Kew York, 1953- 
+
+
+
+3. 
+
+It was the author's aim to fill this gap, by providing an 
+up-to-date exposition which emphasizes practice, but which also 
+is self-contained as to theory, and which covers all (or nearly 
+all) of the successful and popular methods. A good many more 
+were included which are largely of theoretical interest, with the 
+idea of making the collection useful for research workers. 
+
+The presentation has been arranged with a rather particular 
+educational schedule in mind. It is the author's feeling that 
+universities and colleges with programs in numerical analysis 
+should give two years of post-calculus instruction in the subject. 
+The first year should cover the classical topics: interpolation, 
+quadrature, solution of ordinary differential equations, solution 
+of non-linear single equations, and so forth. The second year 
+might well start with matrix inversion and the solution of simul- 
+taneous linear equations. It would proceed then to eigenvalues of 
+matrices, and would then go back and apply eigenvalue theory to the 
+important problem of round-off error analysis in linear computation 
+and to other special problems in matrix inversion. Then would follow 
+integral equations, and a long study of partial differential and 
+partial difference equations. 
+
+The present work is intended as a reference (or even as a 
+text-book) for the first topic of the second year. Since this 
+topic precedes eigenvalues in the above schedule, they are men- 
+tioned in the text only superficially, and no essential develop- 
+ments are made to rest on them. But eigenvalues have not been 
+completely avoided. It is not bad pedagogical practice to antici- 
+
+
+
+- ^'fi;;« 
+
+
+
+h' 
+
+
+
+pate future topics, so the author has not hesitated to introduce 
+the definition of eigenvalues in Chapter 1, together ^'i■'■h the 
+interesting Gersgorin Theorem, and to make some slight use of the 
+canonical decomposition and the Gersgorin Theorem in Chapter 7. 
+
+One boundary condition which the author has imposed on him- 
+self is the principle that classroom work in ntunerlcal analysis 
+should always be accompanied by laboratory sessions. This in 
+turn means that the students must have something worthwhile and 
+relevant to do in the laboratory sessions. Therefore the theory 
+has been presented on a pay-as-you-go bc^sis, with not much more 
+given at one time than is immediately necessary as a background 
+for the next group of methods. The exception lies in the first 
+chapter, where the prerequisite framework of algebraic theory is 
+quickly erected. It is suggested that the first laboratory session 
+can profitably be devoted to numerical practice in performing 
+matrix iterations and other manipulations. 
+
+Each new method is presented first as a cook-book recipe, and 
+then the special theory is developed. The author has hopes that 
+this approach will make the presentation useful as a laboratory 
+manual in addition to its intended service in education and re- 
+search. Once the basic notation is understood, the instructions 
+given for each method can be followed without any reference to, 
+or understanding of, the theory. 
+
+An attempt was made to provide neat and appropriate proofs 
+for the theory sections. Sophisticated geometric methods, and 
+arguments employing the language of abstract spaces, were generally 
+
+
+
+t '• 
+
+
+
+c\ ■ ' • 
+
+
+
+5. 
+
+avoided. This resulted In a substa.itial reworking of a good por- 
+tion of the standard theory -- a fact which will be particularly 
+evident to the reader in the treatment of iterative methods. There 
+are a number of apparently new results in Chapters 6-8. 
+
+It was found that the avoidance of eigenvalue arguments caused 
+negligible difficulty in presenting the theory. On the other hand, 
+it did make the presentation seriously incomplete in one respect: 
+an adequate discussion of round-off error and condition of matrices 
+was necessarily considered to be outside the scope of the work. 
+There may be some external justification for this, in that an ade- 
+quate theory of error analyses is as yet non-existent for many of 
+the methods presented. The author hopes to return to the subject 
+when time permits and supplement this essay with a complete treat- 
+ment of round-off error. 
+
+In view of certain admirable bibliographic studies which have 
+recently been made by Forsythe" and others, no special effort was 
+
+
+
+See Ihe "Tentative Classification of Methods and Bibliography," 
+etc., of Forsythe in Simulta n eous Linear Equations and the Deter- 
+mi n ation of Eigenvalues , National Bureau of Standards, Applied 
+Mathematics Series No. 29, Washington, 1953 » The user of the present 
+essay is urgently advised to equip himself with the Forsythe biblio- 
+graphy, especially if older collateral references will be used. The 
+older literature of linear computation is shot through with false 
+credit lines and incorrect assumptions of priority. The author is 
+fully aware in making this statement that the present treatment will 
+undoubtedly contain errors of scholarship which will be shown up by 
+future literature researches. 
+
+
+
+6. 
+
+
+
+made to attain any sort of bibliographic stature for this exposition. 
+Many of the references are to secondary sources- Some of the cita- 
+tions were chosen mainly to direct the reader to worked-out niimeri- 
+cal examples. The few references to primary sources are either to 
+very new work or to classical work for which the author felt the 
+priority should be emphasized. Foreign language references were 
+largely avoided, again with the idea of making the presentation 
+useful for laboratory technicians . 
+
+The idea for this work grew out of lectures which the author 
+gave at Harvard during the spring term of 1953- He is deeply 
+grateful to Professor Howard Aiken and Dean J, H. Van Vleck for this 
+opportunity. 
+
+The Harvard lectures were guided by a set of mimeographed 
+notes of lectures given by G. E. Porsythe at the I^niversity of 
+California at Los Angeles in 1951. (The notes were written up by 
+
+D. G. Aronson and K. E. Iverson .) 
+
+The final treatment has strayed rather far from the Harvard 
+lectures. The organization and preparation of the manuscript, and 
+the development of practically all of the new material, was carried 
+out at the Institute of Mathematical Sciences of New York University 
+in the academic year 1953 - 1951+, with the support of the Office of 
+Ordnance Research and of the Office of Naval Research. 
+
+This has the somewhat unfortunate result of excluding detailed 
+references to the excellent and comprehensive expository work of 
+
+E. Bodewig. It is adequately covered by Forsythe (loc. cit . ) however. 
+
+
+
+SUMMARY_OF_THE_ CHAPTERS . 
+
+Preliminary Eote on Notation . 
+
+Capital letters denote n x n real matrices, with the excep- 
+tion that 'X, X , Xt , •.., and Y are real n x m matrices. Vectors 
+' o 1 
+
+are denoted by Greek letters. The central problem under study is 
+to solve the equation AX = Y for X, given A and Y , where A is 
+real and non-singular. Special cases are the problems A^ - "n. 
+and AX = I . The first of these is the standard simultaneous 
+linear equation problem and the second is the matrix inversion 
+problem . 
+
+
+
+8. 
+
+CHAPTER 1. BACKGROUND 
+
+
+
+This is an introductory chapter. The primary purpose of the 
+chapter is to make the report largely self-contained as to matrix 
+theory. The central theorem is the reduction of a matrix to what 
+Birkhoff and MacLane call the"echelon form". Prom this are de- 
+rived the conditions for non-singularity, and the basic facts about 
+determinants and linear dependence. The chapter also contains a 
+section on operational counts, with a table showing the number of 
+multiplications required to carry out various typical linear com- 
+putations. There is a section on the relation of matrix inversion 
+to solving linear equations. The Importance of a suitable corres- 
+pondance between equations and unknowns i? stressed. 
+
+Note: In presenting each of the methods for matrix inversion 
+and for the solution of linear equations in Chapters 2-8, the 
+following outline is followed: 
+
+(a) Procedure. (Simple instructions to the computer as to 
+what to do, without explanations ^ ) 
+
+(b) Modifications. (Variants of (a)). 
+
+(c) Checks. 
+
+(d) Theory. 
+
+(e) Amount of work. (Measured as the nominal number of multi- 
+plications required in worst cases.) 
+
+(f) References, 
+
+
+
+CHAPTER 2. ELIMINATION METHODS 
+
+Section 2.1. Elimination methods In general . (Contains a general 
+theorem which covers all elimination methods.) 
+
+Section 2.2. METHOD I. The Gauss Elimination Method . Four ver- 
+sions are given, with check and theory of check. There is a 
+detailed count of multiplications, with a table giving the num- 
+bers of multiplications required to solve various different 
+problems . 
+
+Section 2.3. METHOD II. The Complete Elimination Metho d. 
+
+Section 2.i|. METHOD III. The Triangular Factorization (Cholesky- 
+Crout) Method . Three versions are given. The second one is 
+the Aiken "below-the-line" variant using an augmented matrix, 
+and the third is the "square-root method" for symmetric matrices 
+In the Theory , the LDU theorem and its various corollaries are 
+stated and proved. The rpoof used is similar to that of 
+Fadeeva, Computational methods of linear algebra (Russian), 
+Moscow-Leningrad, 195o in the Porsythe-Benster translation. 
+
+
+
+10. 
+
+CHAPTER 3- ORTHOGONALIZATION 
+
+
+
+Section 3«1« P ositive definite matrices . The main properties of 
+positive definite matrices are stated and proved. It is 
+shown that pctitive definiteness is invariant under con- 
+gruence, and is related to the dominant diagonal property. 
+The basic theorem is proved by means of the LDU theorem and 
+not by means of the canonical form. 
+
+Section 3,2. S - orthogonality . Definition and properties of 
+S - orthogonal vectors and matrices. 
+
+Section 3»3« The Gram-Schmidt Process . The process is developed 
+for S - orthogonalization rather than for I - orthogonali- 
+zation. The steps and formulas are ultimately exhibited 
+in a table. 
+
+Section 3'k' METHOD IV. The Classical Orthogonalization Method . 
+The theory sub-section relates the procedure to elimination 
+procedures and the LDU theorem. 
+
+Section 3.5- METHOD V. The Method of Conjugate Directions . Two 
+
+versions are given. The first is essentially the suggestion 
+of Pox-Huskey-V/illiamson for symmetric matrices. The second 
+is applicable to general matrices, and is derived from a 
+method of conjugate gradients proposed by E. J. Craig in 
+correspondence with the author^. 
+
+Section 3 •6. Connections between the orthofionalizatlon methods , 
+and relationships with other me thods . 
+
+
+
+New. 
+
+
+
+'-.■■A ^^"^0;' ■ '!\\ 
+
+
+
+:v:\ c : 
+
+
+
+■J c ~ > 
+
+
+
+11. 
+
+Section 3.7. Orthogonal reduction to triple diagonal form . The 
+possibility of using for matrix inversion a reduction to 
+triple diagonal form exploited recently by Givens in the 
+eigenvalue problem is pointed out, but details of the con- 
+struction are not given. 
+
+
+
+12, 
+
+
+
+CHAPTER h' BLOCK IHVERSI O IJ A N D ESCALATOR METH ODS , 
+
+Section l\..l The ge neral form u las for block Inversion . The Schur 
+formulc^s are stated and proved. 
+
+Section l|.-2. METHOD VI. The Escalator Method . The Morris Escala- 
+tor Method and its generalization to block steps is stated. 
+The effect of row interchangee to "dodge" a collapse of the 
+method is discussed. 
+
+
+
+13. 
+
+CHAPTER 5. VARIATIONAL FORMULAS 
+
+
+
+Section 5«1- The inverse of a modified matrix . A general formula 
+is proved for /\^, where Za^ is given by (A + /\^) {X +Ziy) 
+= Y + Z\y. various special cases are stated. 
+
+Section 5.2. Derivatives and infinitesimals . Partial derivatives 
+of the elements of X with respect to those of A and Y are 
+developed, where X Is given by AX = Y. The proofs of the 
+required limit relations do not use Cramer's rule and the 
+theory of functions of many variables''^ 
+
+Section 5«3. The condition of a matrix , A qualitative treatment 
+that introduces several proposed condition niombers. 
+
+Section 5*1]-* METHOD VII. The method of variation . How to invert 
+
+a matrix by changing one row or one element at a time in a 
+
+matrix A whose Inverse Is knowno 
+o 
+
+
+
+New, but probably unimportant. 
+
+
+
+CHAPTER 6. DESCE^•T METHODS 
+
+
+
+Section 6.1. Iterative methods In general . Distinction between 
+direct and iterative methods; definitions of convergence, 
+residual matrix, error matrix, descent method "step"* 
+Properties shared by all good iterative metihods. Table of 
+basic recursion relations. 
+
+Section 6.2. Elementary theory of descent methods . Proof of equi- 
+valence of the three limiting relations X^ — > A~T", R — > 0, 
+and RvtSP,,t — > 0, where X„ is the N-th approximation in an 
+iterative solution of AX = Y, R„ is the N-th residual matrix, 
+and S is any positive definite matrix". A sufficient condi- 
+tion for convergence of descent methods is stated and proved^'*. 
+Table of quadratic forms useful in descent methods. 
+
+Section 6.3. METHOD VIII. The Relaxatio n Method . Simplest pro- 
+cedure; group operations; over-relaxing and under-relaxing; 
+various nvimerical suggestions. In the theory , proof of con- 
+vergence is given for the case A > . It is worth noting 
+that by using the results established in Section 6.2, the 
+proof is reduced to two lines, which is in contrast with cer- 
+tain treatments elsewhere in the literature. 
+
+Section 6.lj.. Optimum - a„ methods. The "best" value of a^, in the 
+
+N II 
+
+The method of proof used in connection with RvrSR„ is probably 
+new; it does not use canonical forms. 
+
+New. 
+
+
+
+o 1 
+
+
+
+15. 
+
+
+
+recursion relation ^^^^ = ?^ - a^.e^. for the problem 
+A£ = 1:^ is derived. A one parameter modification is developed. 
+A general sufficient condition for the convergence of any- 
+modified optimxim - a method is stated and proved". It is 
+shown that both the Relaxation Method and the Method of 
+Conjugate Directions are both optimum - a^ methods. 
+
+Section 6.5. METHOD IX. The Method of Steepest Descent . The simplest 
+optimum gradient method with a one-parameter modification is 
+described. In the theor y, convergeii-^.e Is quickly proved^^by 
+referring to Section 6.L|.. Then the geometric principles in- 
+volved in the entire class of optimum gradient methods are 
+discussed at some length, starting with elementary ideas 
+from calculus and anlytic geometry. 
+
+Section 6.6. METHOD X. The Conjugate Gradient Method . The Hestenes- 
+Stiefel method and Craig modification are presented. For- 
+mulas for the inverse and determinant are given. Under 
+theory , the basic orthogonality relation are stated but oroof 
+is postponed to Section 6,7. The fact that the method is 
+essentially a variant of the fiethod of Conjugate Directions 
+is proved. The latter method does not a priori admit zero 
+direction vectors, however, and the resulting distinction 
+between the Conjugate Gradient Method and the Method of Con- 
+jugate Directions is discussed with some care*,^ 
+
+New 
+
+New 
+
+•it ^'f *K 
+
+New but unimportant. 
+
+
+
+;.J:*G'': 
+
+
+
+l^ 
+
+
+
+',,'^^€^ 
+
+
+
+::cni<^ 
+
+
+
+■■■ ■:y'> 
+
+
+
+o^- 
+
+
+
+16. 
+
+Section 6.7. Proof of the basic theorem In the Conjugate Gradient 
+M ethod . The Hestene3-Stlefel double-Induction proof, with 
+a little more attention to the possibility of a breakdown of 
+the algorithm than they gave. 
+
+Section 6.8. A generalization of the Conjugate Grad i ent ; ot hod Y 
+
+A generalization is stated and proved which contains all the 
+algorithms known to be useful in practice. Specialization 
+to the Modification in Section 6.6 is given. Formulas for the 
+determinant are derived.. 
+
+Section 6.9. Other optimum- a^ methods. A table sujnmarizes the / 
+various other gradient methods which have been proposed. Ko 
+evaluation is given. 
+
+
+
+New. Presented by title at Yosemite Meeting of the American 
+Mathematical Society in May, 195^;- Paper submitted to Ma thematical 
+Tables and Other Aids toConputation. 
+
+
+
+17. 
+
+
+
+CHAPTER 7r LINEAR ITERATIVE METHODS. 
+
+
+
+Section 7.1. Measure of mapnltudo of matri ces. Properties of norms 
+
+are derived from four axioms discussed by Rella at the Oslo 
+
+Congress In 193^- Suffi-lent conditions for A-, A^ ... A^,— > . 
+
+1 2 N 
+
+If A — > 0, then the elements of A" approach zero with a geo- 
+metric c'.egree of cor.vsrgence"" '. An inequality for ;| A~ }| is 
+derived."" Special norms are pre^entsd, together vjlth proofs 
+that they satisfy the Rella asiomc (A table of special norms 
+and their properties is given.) 
+
+Section 7o2. Classifica tio n of Iterativ o proces ses . Consistency, 
+linearity, statlonarlty c The most general consistent linear 
+process. 
+
+Section 70- E lem e ntary convergence theory for linear iter ative 
+
+proc esse s . The relationship between Neumann series and linear 
+iterative processes. Necessary and sufficient co"ndltions for 
+the convergence of Neumann scries. Various sufficient condi- 
+tions for the convergence of linear processes, stated in torms 
+of certain norms o An inequality for || A~ || in terms of the 
+norms of matrices involved in a convergent linear process. 
+
+Section 7.1;' Rem arks on the sel ectio n a nd us e of linear i terative 
+
+p roces ses . It is pointed out that there are an infinite num- 
+ber of convergent processes for any problem. Linear iterative 
+
+
+
+New. Published by the author with a different proof in a paper 
+appearing in the Journal of Mathematics and Physics for Jan;iary 1951; • 
+
+Probably known previously but in some other form. 
+
+
+
+18. 
+
+
+
+processes are generally stable under round-off error (proof 
+given) . Various a posteriori tests of a successful choice of 
+an iterative process. Three different computation procedures 
+for any linear iterative process are presented. An arrange- 
+ment whereby the non-homogeneous recursion relation 
+■^N+1 ~ ^^N "•■ ^^ is replaced by a homogeneous one Z , = KZj^ 
+is presented^. 
+Section 7.5« Rapidity of convergence of linear processes; accelera - 
+tion devices . Here for the first '■.'■-e the role of the eigen- 
+values of H in the relation X^ •, = HX^ + MY is brought out. 
+
+The canonical forms and canonical decompositions of H and of 
+
+N 
+H are presented without proof in the non-defective case. 
+
+2 
+The Aiken 6 - process and another simpler acceleration method 
+
+are derived. 
+Section 7.6. Optimum one-parameter adjustment of the matrix MA . 
+
+Acceleration devices based on the adjustment of the parameter, 
+t in the recursion relation X^_|_-, = (I-tMA)X + tMY are des- 
+cribed. First a result based on the smallest and largest 
+eigenvalue of MA (assuming real positive eigenvalues) is 
+given. This is a generalization of known results for the 
+Richardson Method (Section 7.8). Then a method (apparently 
+entirely new) based on minimizing jll - tMA || is derived and 
+discussed. 
+
+
+
+Maybe new, but unimportant. Published by the author in the 
+Journal of Mathematics and Physics, loc . cit . 
+
+■iiSC- 
+
+The material in this Section is new. Publication as a research 
+paper is under consideration. 
+
+
+
+- - ■ •■■■ «A ;>>" 
+
+
+
+i^>. 
+
+
+
+
+
+
+19. 
+
+Section 7.7. Linear Iterative methods as descent methods . The 
+heart of this section is a theorem^' which states that a 
+sufficient condition for the convergence of the process 
+^N+1 ~ ^^N "*" ^^ ^^ that a matrix S > exists such that the 
+quadratic form SAM + M'A'SAM is positive definite. The in- 
+variance of positive definlteness under congruence is ex- 
+ploited to obtain the simpler condition (M~ ) ' + M~ - A > 
+for the case A > . 
+
+Section 7.8. METHOD XI* The Correction -by-Residuals (Richardson) 
+
+M eth od . The basic procedure and three modifications are given* 
+The first modification is based on the known optlr, 1 adjust- 
+ment of the process in terms of the least and greatest eigen- 
+value of A. The second one takes M = tA ' in the relation 
+X„ -, = (I - MA)X»T + MY. The third one is a rather compli- 
+cated optimum non- stationary one discussed by D. Young in 
+various research papers now being published. 
+
+Section 7.9. METHOD XII. The T otal-Step ■■?. 'acobi) Method . The 
+
+simplest procedure and an optimum one-parameter modification 
+are given. In the theory , convergence is proved for the case 
+of a dominant diagonal. 
+
+Section 7.10. METHOD XIII. The Gycli" Single-S te p ( Gauss-Seidel) 
+
+Method. The procedure is first stated in its most economical 
+
+
+
+New. Separate publication if time permits 
+
+
+
+20, 
+
+
+
+form. Then a special one-parameter modification is intro- 
+duced, and the optimum adjustment used by D. Young in his 
+Harvard Thesis is presented. In the theory , convergence is 
+proved for A > by a descent argument. (In view of the 
+theorem of Section 7.7, the proof takes two lines, which can 
+be contrasted with the lengthy and complicated proofs in the 
+literature.) The Collatz Theorem about convergence in the 
+case of a dominant diagonal is also stated, and carefully 
+proved. There is an extended discussion of the amount of 
+work required for each of the various arrangements. 
+
+
+
+21. 
+
+
+
+CHAPTER 6. MISCELLANEOUS METHODS. 
+
+
+
+Section 8.1. Linear Improvement Method . This relates to the improve- 
+ment of the solution of AX = Y by calculati- ' R = Y - A)( 
+
+"" o o * 
+
+solving AX^ = R^ for X-^ , calculating R^ = Y - AX^, solving 
+AX2 = R^ for X2 , and so on. A general theory"''" is given in 
+which the advantages of having an approximate inverse of A 
+to work with are brought out. There is a careful count of 
+operations, from which a recommendation is formulated as to a 
+choice of procedures^, . 
+Section 8.2. METHOD XV. Polynomial iteration method for i mproving 
+an inverse . A quadratic and a cubic algorithm are both given, 
+together with instruction^' for choosing between them. A gen- 
+eral theory of polynomial iterative methods is developed which 
+includes these algorithms as special cases. Inequalities for 
+norms useful in predicting the degree of convergence are de - 
+rived. Under Amount of l^oxk a careful discussion of the prob- 
+lem of selecting the most economical Iterative method is given'"""^', 
+together with a table shewing the limits of the amount of work 
+for polynomials of degree 2, 3, k, 5, 6. It is pointed out 
+that under certain circiamstances, linear iteration is better 
+than polynomial iteration''. 
+
+
+
+New 
+
+New. An earlier analysis by Ullman in Ann. Math. Stat. Vol. l5 
+(1914-9) l+53-i4-62, seems to be invalid because it is based on the assump- 
+tion that N, the number of iterations required to achieve a given ac- 
+curacy, is a continuous variable rather than a discrete one. 
+
+
+
+:-i-T'- 
+
+
+
+.-^rr 
+
+
+
+■I'Q- ttlKi- 
+
+
+
+22, 
+
+
+
+section 8.3. METHOD XVI. The Monte Carlo Method*. An Improved and 
+simplified version of the author's scheme of importance samp- 
+ling, published in the Journal of Mathematics and Physics for 
+January l^Sk, is presented. A comparison is given of the 
+amount of work required for a Monte Carlo solution and various 
+deterministic solutions which atart with the same data. 
+
+Section 8.U. METHOD XVII. Characteristic Equation Method. 
+
+
+
+New. Material presented at a Symposium on Monte Carlo Methods held 
+at Gainesville, Florida on March 16-18, 1951+. Publication intended. 
+
+
+
+-'- /./I a,. 
+
+
+
+
+
+DATE DUE 
+
+
+
+
+OCT'R'R-. 
+
+
+
+
+
+
+
+
+.ANza-ef 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+GAg^ORD 
+
+
+
+
+
+
+PRINTED IN USA. 
+
+
+
+
+C V v^ i ^ 
+
+
+
+NEW YORK UNIVFRSITY 
+INSTITUTE OF A ^ SCIENCES 
+
+
+
+. \. \ . ■ 1 
+
+
+
+e, New York 3, N. Y. 
+
+
+
+^/fW.^ ^^^^^ 
+
+
+
+Maoufactuied in the Uoind Seatea for New York UnivcraitT Pre» 
+br the Uiu'venitr's Office oi Publicacioot and PrintiDg 
+
+
+
